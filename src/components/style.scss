@@ -4,12 +4,28 @@
 // Importing Bulma from node_modules
 @import '~bulma/bulma.sass';
 
+
+
 body{
 	background-color: $main-bg;
+	font-family: $secondary-font;
+}
+
+h1{
+	font-family: $main-font;
+}
+
+h2{
+	background: -webkit-linear-gradient($white, $main-text);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	&.is-headline{
+		font-weight: 800;
+	}
+
 }
 
 .gradientBg {
-	display: flex;
 	background: linear-gradient(to right, $primary-color, $secondary-color);
 }
 
@@ -18,8 +34,6 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-
-
 
 .features{
 	.container{

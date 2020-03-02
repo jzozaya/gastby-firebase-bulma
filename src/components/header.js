@@ -8,7 +8,7 @@ import bulmaLogo from '../images/bulma-logo.png';
 import Navbar from './navbar';
 
 const Header = ({ siteTitle }) => (
-	<section className="hero gradientBg is-fullheight-with-navbar">
+	<section className="hero gradientBg is-medium">
 		<Navbar />
 		<div className="hero-body">
 			<div className="container center">
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
 					</figure>
 					<div className="media-content">
 						<div className="content">
-							<h1 className="is-uppercase is-size-1 has-text-white">
+							<h1 className="is-size-1 has-text-white">
 								Hello from Bulma + Gatsby
 							</h1>
 							<p className="subtitle has-text-white is-size-3">

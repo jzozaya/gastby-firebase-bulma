@@ -12,6 +12,7 @@ const Layout = ({ children }) => (
 		<Helmet />
 		<Header />
 		<Features />
+		{/* <Calendar /> */}
 		<Midsection />
 		<Footer />
 	</div>

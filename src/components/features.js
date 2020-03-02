@@ -12,8 +12,8 @@ const Features = () => (
 			<div className="container">
                 <div className="columns is-tablet is-multiline">
                     <div className="column is-12-tablet">
-                        <h1 className="section-category has-text-light title is-6">Features</h1>
-                        <h1 className="section-title is-headline has-text-light has-text-gradient title is-1">Runlet is a cloud-based job manager that offers device synchronization and reliable message delivery in a network of connected devices even after connectivity issues.</h1>
+                        <h3 className="section-category has-text-light title is-6">Features</h3>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">Runlet is a cloud-based job manager that offers device synchronization and reliable message delivery in a network of connected devices even after connectivity issues.</h2>
                     </div>
                     <div className="column is-12-tablet">
                         <div className="tile is-ancestor">
@@ -35,9 +35,8 @@ const Features = () => (
                                     <div className="tile is-vertical">
                                         <div className="tile is-parent">
                                             <div className="tile has-text-info notification is-child is-primary"><span className="icon is-large"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" size="48" height="48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg></span>
-                                                <h1
-                                                    className="title">Device Sync</h1>
-                                                    <h2 className="has-text-light subtitle">View and execute jobs from any authorized devices.</h2>
+                                                <h2 className="title">Device Sync</h2>
+                                                <h3 className="has-text-light subtitle">View and execute jobs from any authorized devices.</h3>
                                             </div>
                                         </div>
                                         <div className="tile is-parent">
@@ -47,8 +46,8 @@ const Features = () => (
                                                         <path d="M504 255.531c.253 136.64-111.18 248.372-247.82 248.468-59.015.042-113.223-20.53-155.822-54.911-11.077-8.94-11.905-25.541-1.839-35.607l11.267-11.267c8.609-8.609 22.353-9.551 31.891-1.984C173.062 425.135 212.781 440 256 440c101.705 0 184-82.311 184-184 0-101.705-82.311-184-184-184-48.814 0-93.149 18.969-126.068 49.932l50.754 50.754c10.08 10.08 2.941 27.314-11.313 27.314H24c-8.837 0-16-7.163-16-16V38.627c0-14.254 17.234-21.393 27.314-11.314l49.372 49.372C129.209 34.136 189.552 8 256 8c136.81 0 247.747 110.78 248 247.531zm-180.912 78.784l9.823-12.63c8.138-10.463 6.253-25.542-4.21-33.679L288 256.349V152c0-13.255-10.745-24-24-24h-16c-13.255 0-24 10.745-24 24v135.651l65.409 50.874c10.463 8.137 25.541 6.253 33.679-4.21z"></path>
                                                     </svg>
                                                 </span>
-                                                <h1 className="title">Activity Logs</h1>
-                                                <h2 className="has-text-light subtitle">Timestamped and uniquely identified output logs.</h2>
+                                                <h2 className="title">Activity Logs</h2>
+                                                <h3 className="has-text-light subtitle">Timestamped and uniquely identified output logs.</h3>
                                             </div>
                                         </div>
                                     </div>

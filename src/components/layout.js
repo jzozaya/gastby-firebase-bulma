@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
 		<Header />
 		<Features />
 		{/* <Calendar /> */}
-		<Midsection />
+		{/* <Midsection /> */}
 		<Footer />
 	</div>
 );

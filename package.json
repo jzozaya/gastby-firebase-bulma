@@ -1,6 +1,6 @@
 {
   "name": "gatsby-bulma-firebase",
-  "description": "A Project to bootstrap your next Gatsby + Bulma + Firebase.",
+  "description": "A Project using Gatsby + Bulma + Firebase.",
   "version": "1.0.0",
   "author": "Jorge Zozaya <jorge.zozaya.verdiguel@gmail.com>",
   "dependencies": {

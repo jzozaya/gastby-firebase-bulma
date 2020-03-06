@@ -14,6 +14,21 @@ const Features = () => (
                     <div className="column is-12-tablet">
                         <h3 className="section-category has-text-light title is-6">Features</h3>
                         <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">Runlet is a cloud-based job manager that offers device synchronization and reliable message delivery in a network of connected devices even after connectivity issues.</h2>
+                        <h4 className="title is-2">Dancing is a celebration</h4>
+                        <p className="content is-large">When you dance, if you are aware that you are alive, that is already enlightment. 
+                            You are aware that you have a body; that is already enlightment. You are aware that your feet
+                            are strong enough your you to enjoy dancing; that is also enlightment. When you dance, it can
+                            be a celebration. When you breathe like that, you are celebration life.
+                        </p>
+                    </div>
+                    <div className="column is-12-tablet">
+                        <div className="double-square-shape gradientBg">
+                            <div className="square sq1">
+                                <h3 className="title">👩🏼 🦈</h3>
+                                {/* <h3 className="title">You spoke to me with words, I looked at you with feelings. Your gaze envelops me in a bubble that I would never leave</h3> */}
+                            </div>
+                            <div className="square sq2"></div>
+                        </div>
                     </div>
                     <div className="column is-12-tablet">
                         <div className="tile is-ancestor">

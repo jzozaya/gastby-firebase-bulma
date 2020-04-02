@@ -22,12 +22,35 @@ const Features = () => (
                         </p>
                     </div>
                     <div className="column is-12-tablet">
+                        <div className="double-square-shape">
+
+                            <div className="inner-square-wrapper">
+                                <div className="square sq1">
+                                    <h3 className="title">👩🏼</h3>
+                                    {/* <h3 className="title">You spoke to me with words, I looked at you with feelings. Your gaze envelops me in a bubble that I would never leave</h3> */}
+                                </div>
+                                <div className="square sq2"></div>
+
+                            </div>
+
+                            <div className="inner-square-wrapper">
+                                <div className="square sq1">
+                                    <h3 className="title">🦈</h3>
+                                    {/* <h3 className="title">You spoke to me with words, I looked at you with feelings. Your gaze envelops me in a bubble that I would never leave</h3> */}
+                                </div>
+                                <div className="square sq2"></div>
+
+                            </div>
+                            
+                        </div>
                         <div className="double-square-shape gradientBg">
                             <div className="square sq1">
                                 <h3 className="title">👩🏼 🦈</h3>
                                 {/* <h3 className="title">You spoke to me with words, I looked at you with feelings. Your gaze envelops me in a bubble that I would never leave</h3> */}
                             </div>
                             <div className="square sq2"></div>
+
+                            
                         </div>
                     </div>
                     <div className="column is-12-tablet">

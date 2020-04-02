@@ -7,7 +7,7 @@
 
 
 body{
-	background-color: $secondary-bg;
+	background-color: $main-bg;
 	font-family: $secondary-font;
 }
 
@@ -142,13 +142,30 @@ h2{
 
 .double-square-shape{
 	position: relative;
-	display: block;
-	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin: 20vw 0;
 	margin-top: 10vw;
-	width: 25vw;
-	height: 25vw;
-	margin-left: 25%;
+	width: 100%;
+	height: auto;
+	padding: 5rem 0;
+	border: 1px solid aliceblue;
+	border-bottom: none;
+	border-left: none;
+	&.gradientBg{
+		display: block;
+		margin-left: 25%;
+		display: none;
+	}
+	.inner-square-wrapper{
+		position: relative;
+		min-width: 49%;
+		width: auto;
+		min-height: 25vw;
+		height: auto;
+		display: block;
+	}
 	
 }
 
@@ -166,16 +183,15 @@ h2{
 		text-transform: capitalize;
 		font-family: $main-font;
 		line-height: 1.5;
-		font-size: 2.74rem;
+		font-size: 10.74rem;
 		padding: 1.25rem;
 		text-align: center;
 	}
 	&.sq1{
 		background: linear-gradient(to right, $primary-color, $secondary-color);
-		//border: 1px solid aliceblue;
-		// border-right: none;
-		// border-bottom: none;
-		
+		border: 1px solid aliceblue;
+		border-left: none;
+		border-bottom: none;
 		z-index: 10;
 		
 		&:before{
@@ -187,8 +203,8 @@ h2{
 			height: 0; 
 			border-top: 12.5vw solid transparent;
 			border-bottom: 12.5vw solid transparent; 
-			border-left: 12.5vw solid #24283a;
-			z-index: -1;
+			border-left: 12.5vw solid $main-bg;
+			z-index: -1 !important;
 		}
 		&:after{
 			display: block;
@@ -201,7 +217,7 @@ h2{
 			border-top: 12.5vw solid transparent;
 			border-bottom: 12.5vw solid transparent; 
 			border-right:12.5vw solid #171717;
-			z-index: -1;
+			z-index: -1 !important;
 		}
 	}
 	&.sq2{

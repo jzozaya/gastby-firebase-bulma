@@ -13,7 +13,23 @@ const Features = () => (
                 <div className="columns is-tablet is-multiline">
                     <div className="column is-12-tablet">
                         <h3 className="section-category has-text-light title is-6">Features</h3>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">Runlet is a cloud-based job manager that offers device synchronization and reliable message delivery in a network of connected devices even after connectivity issues.</h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Giegling 10 / Various Artist / Futur II |
+                            <a href="https://www.youtube.com/watch?v=kFFmMfghmrs&list=PLM8E13_ZlGMGl341BnXGNENktJEk32KmZ&index=3" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <br></br>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Folamour - Alerte à Babylone EP |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            M.ono & Luvless ‎– Double You E.P. |
+                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk&feature=emb_logo" target="_black"> Listen ▶︎</a>
+                        </h2>
+
+                        
+                        
+                            
                         <h4 className="title is-2">Dancing is a celebration</h4>
                         <p className="content is-large">When you dance, if you are aware that you are alive, that is already enlightment. 
                             You are aware that you have a body; that is already enlightment. You are aware that your feet

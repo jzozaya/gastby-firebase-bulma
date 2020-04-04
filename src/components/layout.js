@@ -14,6 +14,7 @@ const Layout = ({ children }) => (
 		<Features />
 		{/* <Calendar /> */}
 		{/* <Midsection /> */}
+		
 		<Footer />
 	</div>
 );

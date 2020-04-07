@@ -37,14 +37,7 @@ const Features = () => (
                             Juju And Jordash ‎– The Hush EP |
                             <a href="https://youtu.be/WrTARrAA44g" target="_black"> Listen ▶︎</a>
                         </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
-                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
-                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
-                            Diego Krause ‎– Unison Wax 04 |
-                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
-                        </h2>
+                        
                         <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
                             Grant ‎– Perception |
                             <a href="https://youtu.be/i1cOgU_Q08s" target="_black"> Listen ▶︎</a>

@@ -12,8 +12,6 @@ const Footer = () => (
           siteMetadata {
             gatsby
             bulma
-            twitter
-            medium
             github
           }
         }
@@ -55,7 +53,7 @@ const Footer = () => (
           <p className='is-size-5'>
             You can also back or support this project for me to keep it updated
             by{' '}
-            <a href='https://www.paypal.me/amanhimself/2'>Buying Me a Coffee</a>
+            <a href=''>Buying Me a Coffee</a>
           </p> */}
         </div>
       </footer>

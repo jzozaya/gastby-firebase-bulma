@@ -11,8 +11,8 @@ const Features = () => (
 		<section className="section features is-medium" id="features">
 			<div className="container">
                 <div className="columns is-tablet is-multiline">
-                    <div className="column is-12-tablet">
-                        <h3 className="section-category has-text-light title is-6">Features</h3>
+                <div className="column is-12-tablet">
+                        <h3 className="section-category has-text-light title is-6">JVG 💿</h3>
                         <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
                             Giegling 10 / Various Artist / Futur II |
                             <a href="https://www.youtube.com/watch?v=kFFmMfghmrs&list=PLM8E13_ZlGMGl341BnXGNENktJEk32KmZ&index=3" target="_black"> Listen ▶︎</a>
@@ -24,8 +24,61 @@ const Features = () => (
                         </h2>
                         <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
                             M.ono & Luvless ‎– Double You E.P. |
-                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk&feature=emb_logo" target="_black"> Listen ▶︎</a>
+                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk" target="_black"> Listen ▶︎</a>
                         </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
+                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Diego Krause ‎– Unison Wax 04 |
+                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        
+                    </div>
+                    
+                    <div className="column is-12-tablet">
+                        <h3 className="section-category has-text-light title is-6">Mint Condition</h3>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Giegling 10 / Various Artist / Futur II |
+                            <a href="https://www.youtube.com/watch?v=kFFmMfghmrs&list=PLM8E13_ZlGMGl341BnXGNENktJEk32KmZ&index=3" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <br></br>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Folamour - Alerte à Babylone EP |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            M.ono & Luvless ‎– Double You E.P. |
+                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
+                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                            Diego Krause ‎– Unison Wax 04 |
+                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+
+
+                        
 
                         
                         

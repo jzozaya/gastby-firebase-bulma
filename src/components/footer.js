@@ -26,7 +26,7 @@ const Footer = () => (
             This website was handcrafted with plenty cups of{' '}
             <Emoji emoji='☕' />
           </p>
-          <p className='is-size-4'>
+          {/* <p className='is-size-4'>
             By Aman Mittal (@amanhimself) using{' '}
             <a href={data.site.siteMetadata.gatsby}>Gatsby</a> +{' '}
             <a href={data.site.siteMetadata.bulma}>Bulma</a>
@@ -56,7 +56,7 @@ const Footer = () => (
             You can also back or support this project for me to keep it updated
             by{' '}
             <a href='https://www.paypal.me/amanhimself/2'>Buying Me a Coffee</a>
-          </p>
+          </p> */}
         </div>
       </footer>
     )}

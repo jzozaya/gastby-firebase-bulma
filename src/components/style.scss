@@ -16,7 +16,7 @@ h1{
 }
 
 h2{
-	
+	line-height: 1.5 !important;
 	&.has-text-gradient{
 		font-weight: 800;
 		word-spacing: 0;
@@ -26,13 +26,22 @@ h2{
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+}
 
+h3{
+	margin: 3rem 0;
+	line-height: 1.5;
 }
 
 .gradientBg {
 	background: linear-gradient(to right, $primary-color, $secondary-color);
 	// background: linear-gradient(to right, $secondary-bg, $main-bg);
 	background: linear-gradient(to right, $main-bg, $secondary-color);
+}
+
+.setup-background{
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .content__title {
@@ -150,7 +159,6 @@ h2{
 	width: 100%;
 	height: auto;
 	padding: 5rem 0;
-	border: 1px solid aliceblue;
 	border-bottom: none;
 	border-left: none;
 	&.gradientBg{
@@ -223,7 +231,6 @@ h2{
 	&.sq2{
 		left: 12.5vw;
 		top: 12.5vw;
-		// border: 1px solid aliceblue;
 		border-left: none;
 		&:after{
 			display: block;

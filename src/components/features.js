@@ -3,8 +3,12 @@ import {
 	FaReact,
 	FaMobileAlt,
 } from 'react-icons/fa';
-
+import paintingBg from '../images/JeremyMann_02.jpg';
 import './style.scss';
+
+let paintingBgObj = {
+    backgroundImage: `url(${paintingBg})`
+}
 
 const Features = () => (
 	<div>
@@ -12,94 +16,56 @@ const Features = () => (
 			<div className="container">
                 <div className="columns is-tablet is-multiline">
                 <div className="column is-12-tablet">
-                        <h3 className="section-category has-text-light title is-6">JVG 💿</h3>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Giegling 10 / Various Artist / Futur II |
-                            <a href="https://www.youtube.com/watch?v=kFFmMfghmrs&list=PLM8E13_ZlGMGl341BnXGNENktJEk32KmZ&index=3" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <br></br>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Folamour - Alerte à Babylone EP |
-                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            M.ono & Luvless ‎– Double You E.P. |
-                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
-                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Diego Krause ‎– Unison Wax 04 |
-                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                             |
-                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                             |
-                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        
-                    </div>
-                    
-                    <div className="column is-12-tablet">
-                        <h3 className="section-category has-text-light title is-6">Mint Condition</h3>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Giegling 10 / Various Artist / Futur II |
-                            <a href="https://www.youtube.com/watch?v=kFFmMfghmrs&list=PLM8E13_ZlGMGl341BnXGNENktJEk32KmZ&index=3" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <br></br>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Folamour - Alerte à Babylone EP |
-                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            M.ono & Luvless ‎– Double You E.P. |
-                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
-                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                            Diego Krause ‎– Unison Wax 04 |
-                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                             |
-                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
-                        </h2>
-                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-1">
-                             |
-                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
-                        </h2>
 
-
-                        
-
-                        
-                        
-                            
-                        <h4 className="title is-2">Dancing is a celebration</h4>
-                        <p className="content is-large">When you dance, if you are aware that you are alive, that is already enlightment. 
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-2">
+                            When you dance, if you are aware that you are alive, that is already enlightment. 
                             You are aware that you have a body; that is already enlightment. You are aware that your feet
                             are strong enough your you to enjoy dancing; that is also enlightment. When you dance, it can
                             be a celebration. When you breathe like that, you are celebration life.
-                        </p>
-                    </div>
-                    <div className="column is-12-tablet">
-                        <div className="double-square-shape">
+                        </h2>
 
+                        <h3 className="section-category has-text-light title is-2">JVG 💿</h3>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Various ‎– Pampa Records Vol. 1 |
+                            <a href="https://www.youtube.com/watch?v=P6NDZl0LbDQ" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Henry Wu ‎– Wu15 EP |
+                            <a href="https://www.youtube.com/watch?v=WPsG5aZvn10&feature=emb_title" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Juju And Jordash ‎– The Hush EP |
+                            <a href="https://youtu.be/WrTARrAA44g" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
+                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Diego Krause ‎– Unison Wax 04 |
+                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Grant ‎– Perception |
+                            <a href="https://youtu.be/i1cOgU_Q08s" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        {/* <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2> */}
+                        
+                    </div>
+
+                    {/* style={paintingBgObj} */}
+
+                    <div className="column is-12-tablet setup-background" >
+                        <div className="double-square-shape">
                             <div className="inner-square-wrapper">
                                 <div className="square sq1">
                                     <h3 className="title">👩🏼</h3>
                                     {/* <h3 className="title">You spoke to me with words, I looked at you with feelings. Your gaze envelops me in a bubble that I would never leave</h3> */}
                                 </div>
                                 <div className="square sq2"></div>
-
                             </div>
 
                             <div className="inner-square-wrapper">
@@ -110,7 +76,6 @@ const Features = () => (
                                 <div className="square sq2"></div>
 
                             </div>
-                            
                         </div>
                         <div className="double-square-shape gradientBg">
                             <div className="square sq1">
@@ -118,10 +83,43 @@ const Features = () => (
                                 {/* <h3 className="title">You spoke to me with words, I looked at you with feelings. Your gaze envelops me in a bubble that I would never leave</h3> */}
                             </div>
                             <div className="square sq2"></div>
-
                             
                         </div>
                     </div>
+                    
+                    <div className="column is-12-tablet">
+                        <h3 className="section-category has-text-light title is-2">Mint Condition</h3>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Giegling 10 / Various Artist / Futur II |
+                            <a href="https://www.youtube.com/watch?v=kFFmMfghmrs&list=PLM8E13_ZlGMGl341BnXGNENktJEk32KmZ&index=3" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Folamour - Alerte à Babylone EP |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            M.ono & Luvless ‎– Double You E.P. |
+                            <a href="https://www.youtube.com/watch?v=xArBhrEy_lk" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Death In Vegas ‎– You Disco I Freak Remixes / Metal Box Rework |
+                            <a href="https://www.youtube.com/watch?v=NtDZaVdGsfw" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                            Diego Krause ‎– Unison Wax 04 |
+                            <a href="https://www.youtube.com/watch?v=MPviRcMFPZc" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        {/* <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2>
+                        <h2 className="section-title is-headline has-text-light has-text-gradient title is-3">
+                             |
+                            <a href="https://www.youtube.com/watch?v=okhXIVi8GrA" target="_black"> Listen ▶︎</a>
+                        </h2> */}
+                        
+                    </div>
+
                     <div className="column is-12-tablet">
                         <div className="tile is-ancestor">
                             <div className="tile is-7 is-vertical">

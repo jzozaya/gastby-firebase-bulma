@@ -1,2 +1,12 @@
-node_modules
 
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+.DS_Store
+.env
+
+# Build directories
+/public
+/functions
+/dist

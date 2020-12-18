@@ -1,0 +1,43 @@
+{
+  "files": {
+    "app.js": "/static/js/app.81f1d93d.chunk.js",
+    "app.js.map": "/static/js/app.81f1d93d.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
+    "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
+    "static/js/2.0d0aa42d.chunk.js": "/static/js/2.0d0aa42d.chunk.js",
+    "static/js/2.0d0aa42d.chunk.js.map": "/static/js/2.0d0aa42d.chunk.js.map",
+    "fonts/AntDesign.ttf": "/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/./fonts/MaterialIcons.ttf",
+    "fonts/PTSerif-Bold.ttf": "/./fonts/PTSerif-Bold.ttf",
+    "fonts/PTSerif-Regular.ttf": "/./fonts/PTSerif-Regular.ttf",
+    "fonts/SimpleLineIcons.ttf": "/./fonts/SimpleLineIcons.ttf",
+    "favicon-16.png": "/favicon-16.png",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon.ico": "/favicon.ico",
+    "index.html": "/index.html",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "static/js/2.0d0aa42d.chunk.js.LICENSE.txt": "/static/js/2.0d0aa42d.chunk.js.LICENSE.txt",
+    "static/media/Holcim-logo-color.png": "/static/media/Holcim-logo-color.549d8398.png",
+    "static/media/Holcim-logo-white.png": "/static/media/Holcim-logo-white.831b23cd.png",
+    "static/media/avatar.jpg": "/static/media/avatar.08f5e1c6.jpg",
+    "static/media/brutalist-and-beauty-bg.jpg": "/static/media/brutalist-and-beauty-bg.8f067459.jpg",
+    "static/media/intro-bg.png": "/static/media/intro-bg.e7203c0d.png",
+    "static/media/slide-example.jpg": "/static/media/slide-example.56f1585d.jpg",
+    "static/media/texture.jpg": "/static/media/texture.08b0de88.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.2e9f1821.js",
+    "static/js/2.0d0aa42d.chunk.js",
+    "static/js/app.81f1d93d.chunk.js"
+  ]
+}

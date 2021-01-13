@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLCIM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <style> 
+        body{margin: 0; padding: 0; background: #EAEAEA;}
+        input:focus::-webkit-input-placeholder{color:transparent;}
+        input::-webkit-input-placeholder { color: #70707080; text-align: center;} 
+        input:-moz-placeholder { /* Firefox 18- */ color: #70707080; text-align: center;} 
+        input::-moz-placeholder { /* Firefox 19+ */ color: #70707080; text-align: center;} 
+        input:-ms-input-placeholder { color: #70707080;text-align: center; }
+        input.icon{
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAZlBMVEUAAAD///+AgICOjo6AgICLi4uAgICJiYmIiIiAgICAgICAgICCgoKCgoKBgYGBgYGAgICBgYGAgICBgYGAgICBgYGAgICBgYGAgICBgYGBgYGAgICBgYGBgYGBgYGBgYGBgYGAgICX3hyyAAAAInRSTlMAAQgJCgsMDQ8QKC4vO09RXGFiZWZnaGtsbW9yc3V3e3+At5h0XAAAAAFiS0dEAf8CLd4AAABsSURBVBjTlczJFoJAEEPRqGXjhM3YAg7w/v8nXSldCxfWLvckJa23j6+p3GQQbgDlCsVIOp6YHJgOPD1Y4uqhZ7Dv02TadozFn9D+BjUk065n+EBYZg+6ULmJFGmqOWtId2CpM1D9iOeQZb0BXXUKmjelzJUAAAAASUVORK5CYII=');
+            background-repeat: no-repeat;
+            background-position: 90%
+        }
+        input.icon:focus{
+            background-image:none;
+        }
+        .selectdiv {
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            background-color: #fff;
+            border-radius: 0px 0px 6px 6px;
+            color: #707070;
+            border: none !important;
+        }
+                  
+        .selectdiv::after {
+            content: '';
+            width: 10px;
+            height: 9px;
+            right: 20px;
+            top: 40%;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAQAAAChr3WYAAAAAmJLR0QA/4ePzL8AAABfSURBVAjXYzDebPoOFRpvZjAxNPlr8h8J/jM1ZWBgMFmEIriQAQQspU2+wIW+GcsxQIBJA1ywngEGLDlNHoKEjJ/ocTMggEkcWF0sAwpgNDllco6BCVWQwdjG2AbGBgDn2TeTjg3T0AAAAABJRU5ErkJggg==');
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .selectdiv select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;            
+            text-align-last: center;
+            font: normal normal 500 16px/19px Roboto;
+            letter-spacing: 0px;
+            color: #707070;border: none !important;
+        }
+        
+        .selectdiv select:focus, input:focus {
+            outline: #FFF auto 0px;
+        }
+
+        .selectdiv select option {
+            background-color: #ffffff;
+            color: #707070;
+        }
+
+        .selectdiv select option:disabled {
+                color: #70707080;
+        }
+
+        .btn-active-blue{
+            background: #207fe6 0% 0% no-repeat padding-box;
+            border: unset; 
+            color: #FFFFFF;
+        }
+        .select-segmento.active{
+            background: #0d4889 0% 0% no-repeat padding-box;
+            color: #FFFFFF !important;
+        }
+        .branding-size.active{
+            background: #207fe6 0% 0% no-repeat padding-box;
+        }
+
+    </style>
+    
+</head>
+<body style="border: 0px;padding: 0px; margin: 0px;box-sizing: border-box;width: 100%;">
+    <main style="top: 0px; left: 0px;min-height: 100vh;background: #EAEAEA 0% 0% no-repeat padding-box;opacity: 1;height: auto; max-width: 1080px;">
+        
+        <!-- formularios -->
+        <form action="">
+            <!-- ciudad -->
+            <section id="direccion" style="display: flex;margin: 30px 20px 12px; margin-top: 0; padding-top: 30px; position: relative;">
+                
+                <p style="display:inline-block;margin: 0;width: 380px;text-align: left;font: normal normal 400 28px/24px Roboto; line-height: 1.35; letter-spacing: 0px;color: #707070;opacity: 1;">
+                    Seleccione y llene los campos con información especifica del proyecto.
+                </p>
+                
+            </section>
+
+            <h2 style="margin: 0; color: #171717; font: normal normal 700 28px/24px Roboto;letter-spacing: 0px; padding: 10px 30px 0px 30px;">Segmento</h2>
+
+            <!-- tres columnas Primer fila-->
+            <section style="display: flex;justify-content: space-around; padding: 30px 0 5px 0; box-sizing: border-box;">
+                <div>
+                    <input class="select-segmento" id="minorista" type="button" value="Minorista" style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                </div>
+                
+                <!-- input 2 -->
+                <div>
+                    <input class="select-segmento" id="mayorista" type="button" value="Mayorista" style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                </div>
+
+                <!-- input 3 -->
+                <div>
+                    <input class="select-segmento" id="distribuidor-tradicional" type="button" value="Distribuidor tradicional" style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                </div>
+            </section>
+            <!--FIN tres columnas Primer fila FIN-->
+
+            <h2 style="margin: 0; color: #171717; font: normal normal 700 28px/24px Roboto;letter-spacing: 0px; padding: 30px 30px 0px 30px;">Tipo de aplicación</h2>
+
+            <!-- tres columnas Primer fila-->
+            <section style="display: flex;justify-content: space-around; padding: 30px 0 15px 0; box-sizing: border-box;">
+                <div>
+                    <div style="width: 314px;height: 90px;background: #0d4889 0% 0% no-repeat padding-box;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Nombre cliente
+                        </p>
+                    </div>
+
+                    <!-- input 1 -->
+                    <div style="background-color:white;color: #707070; border-bottom: 2px solid chartreuse;">
+                        <input placeholder="Ingrese cantidad" id="nombre-cliente" value="Materiales Cuajimalpa" name="nombre-cliente" type="text" required autocomplete="off" style="width: 100%;padding:20px 0px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                    
+                    </div>
+                </div>
+                
+                <!-- input 2 -->
+                <div>
+                    <div style="width: 314px;height: 90px;background: #0d4889 0% 0% no-repeat padding-box;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Volumen promedio compra mensual
+                        </p>
+                    </div>
+                    
+                    <div style="background-color:white;color: #707070; border-bottom: 2px solid chartreuse;">
+                        <input placeholder="Ingrese cantidad" id="vol-promedio-compra-mes" value="150" name="vol-promedio-compra-mes" type="text" required autocomplete="off" style="width: 100%;padding:20px 0px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                    </div>
+                </div>
+
+                <!-- input 3 -->
+                <div>
+                    <div style="width: 314px;height: 90px;background: #0d4889 0% 0% no-repeat padding-box;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Precio promedio
+                        </p>
+                    </div>
+                    <div style="background-color:white;color: #707070; border-bottom: 2px solid chartreuse;">
+                        <input placeholder="Ingrese cantidad" id="precio-promedio" value="2200" name="precio-promedio" type="text" required autocomplete="off" style="width: 100%;padding:20px 0px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                    </div>
+                </div>
+            </section>
+            <!--FIN tres columnas Primer fila FIN-->
+
+            <!-- botones -->
+            <section style="position: relative;display: flex;justify-content: flex-end;padding: 15px 20px 30px 20px;">
+                <input id="enviar-form" type="submit" value="Aplicar" style="cursor:pointer;margin-right: 41px;border:unset;width: 328px;padding:20px 0;background: #207fe6 0% 0% no-repeat padding-box;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">    
+                <input type="reset" value="Limpiar" style="cursor:pointer;border:unset;width: 328px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #343434;opacity: 1;">
+            </section>
+            
+            <!-- Holcim Conecta tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Holcim Conecta
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Capacítate y profesionaliza a tu personal
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="holcim-conecta" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 6,11
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <div style="display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo Operacional:</p>
+                            <input placeholder="" id="modulo-operacional" value="10" name="modulo-operacional" type="text" required autocomplete="off" style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <div style="margin: 15px 0; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo Estratégico:</p>
+                            <input placeholder="" id="modulo-estrategico" value="2" name="modulo-estrategico" type="text" required autocomplete="off" style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        </div>
+                        
+                        <input type="reset" value="Limpiar" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Asesoría Técnica tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Asesoría Técnica
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Acompañamiento y asesoría en obra sobre la aplicación de productos Holcim
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="asesoria-tecnica" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 7,13
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Horas de asesoría anual:</p>
+                            <input placeholder="" id="hrs-asesoria-anual" value="8" name="modulo-operacional" type="text" required autocomplete="off" style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <input type="reset" value="Limpiar" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Holcim Ahorro tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Holcim Ahorro
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Herramienta de apoyo a tu fuerza de ventas para incentivar la venta de productos
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="holcim-ahorro" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 30,03
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Prospecta tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Prospecta
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Capacítate y profesionaliza a tu personal
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="prospecta" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 13,13
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Branding tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Branding
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Brindamos visibilidad a tu punto de venta
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="branding" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 16,67
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <div class="branding-size" id="ch" data-amount="15000" style="padding:18px 0; width: 33%;">
+                                <p style="padding: 0; margin: 0; font: normal normal 400 14px/24px Roboto;">CH</p>
+                            </div>
+                            <div class="branding-size" id="md" data-amount="30000" style="border: 1px solid #207fe6; border-top: none; border-bottom: none; width: 33%; height: 100%; padding:18px 0">
+                                <p style="padding: 0; margin: 0; font: normal normal 400 14px/24px Roboto;">MD</p>
+                            </div>
+                            <div class="branding-size" id="gd" data-amount="45000" style="padding:18px 0; width: 33%;">
+                                <p style="padding: 0; margin: 0; font: normal normal 400 14px/24px Roboto;">GD</p>
+                            </div>
+                        </div>
+                        <input type="button" value="Aplicar" id="aplicar-branding" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Holcim Extendido tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Holcim Extendido
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Extiende beneficio de promoción y publicidad a tu red de reventas
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="holcim-extendido" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 209,72
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="width: 50%; padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Brandeo de PDV</p>
+                            <input placeholder="" id="brandeo-PDV" value="5" name="brandeo-PDV" type="text" required autocomplete="off" style="width: 50px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="width: 50%;padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Eventos de Aniversario</p>
+                            <input placeholder="" id="eventos-aniversario" value="5" name="eventos-aniversario" type="text" required autocomplete="off" style="width: 50px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="width: 50%; padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Exhibidores mostrador</p>
+                            <input placeholder="" id="exhibidores-mostrador" value="5" name="exhibidores-mostrador" type="text" required autocomplete="off" style="width: 50px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="width: 50%; padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Kit de Activación</p>
+                            <input placeholder="" id="kit-activacion" value="5" name="kit-activacion" type="text" required autocomplete="off" style="width: 50px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <input type="button" id="aplicar-extendido" value="Aplicar" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mejoravit tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Mejoravit
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Capacitación de nuevos clientes a través del acercamiento de soluciones financieras
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 id="mejoravit" style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 11,00
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">% Compra de cemento</p>
+                            <input placeholder="" id="percent-compra-cemento" value="30%" name="percent-compra-cemento" type="text" required autocomplete="off" style="width: 50px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Beneficio mejoravit:</p>
+                            <input placeholder="" id="beneficio-mejoravit" value="1%" name="beneficio-mejoravit" type="text" required autocomplete="off" style="width: 50px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        
+                        </div>
+                        
+                        <input type="button" id="aplicar-mejoravit" value="Aplicar" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Club de compra tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Club de compra
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Ahorros a través de negociaciones con proveedores de gran relevancia para tu operación
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 6,11
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                    </div>
+                </div>
+                
+            </section>
+
+            
+            <!--FIN tres columnas segunda fila FIN-->
+        </form>
+
+        <!-- PrograMás -->
+        <section style="background-color: #171717; width: 100%;">
+
+            <!-- <h2 style="margin: 0; color: #FFFFFF; font: normal normal 500 24px/24px Roboto;letter-spacing: 0px; padding: 30px 30px 0px 30px;">
+                PrograMas
+            </h2> -->
+
+            <h2 style="padding: 50px 40px 0px 40px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; line-height: 1.3;">
+                PrograMas <span style="color: #207fe6;">Más</span>
+            </h2>
+
+            <!-- resultados 1  cinco columnas -->
+            <section style="display: flex;justify-content: space-around; padding: 60px 20px 30px;">
+                <!--
+                <div>
+                    <p style="text-align: left;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                        PrograMás
+                    </p>
+                </div>
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Colocación y acabado
+                    </p>
+                    <p id="precio-acabado" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $45,000
+                    </p>
+                </div>
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Cimbra
+                    </p>
+                    <p id="precio-cimbra" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $60,000
+                    </p>
+                </div>
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Costos indirectos
+                    </p>
+                    <p id="precio-indirecto" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $15,750
+                    </p>
+                </div>
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Total
+                    </p>
+                    <p id="total" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $120,750
+                    </p>
+                </div> -->
+            </section>
+
+
+            <!-- resultados 2 -->
+            <section style="display: flex;justify-content: space-around;padding:30px 20px;">
+                <!-- <div>
+                    <p style="text-align: left;font: italic normal 800 14px/24px 'Open Sans', sans-serif;letter-spacing: 0px;color: #FFFFFF;text-transform: uppercase;opacity: 1;padding-right: 44px;">
+                        Chronolia<sup>®</sup>
+                    </p>
+                </div>
+                
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Colocación y acabado
+                    </p>
+                    <p id="precio-acabado-chron" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $45,000
+                    </p>
+                </div>
+                
+                
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Cimbra
+                    </p>
+                    <p id="precio-cimbra-chron" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $60,000
+                    </p>
+                </div>
+
+                ¡
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Costos indirectos
+                    </p>
+                    <p id="precio-indirecto-chron" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $10,500
+                    </p>
+                </div>
+
+                
+                <div>
+                    <p style="text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;padding-bottom: 10px;">
+                        Total
+                    </p>
+                    <p id="total-chron" style="text-align: left;font: normal normal 700 24px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin:0;">
+                        $95,500
+                    </p>
+                </div> -->
+            </section>
+            <!--Fin resultados 2 FIN-->
+
+            <!-- cuatro columnas rojas -->
+            <section style="display: flex;justify-content: space-around; padding: 30px 0 15px 0; box-sizing: border-box;">
+
+                <!-- resultado Horas de negocio ganadas -->
+                <!-- <div style="width: 231px;">
+                    <div style="background-color: black; color: white;border: 1px solid #E71618;border-radius: 6px 6px 0px 0px;height: 110px;opacity: 1;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Horas de negocio ganadas con Chronolia
+                        </p>
+                        <span style="padding: 0 20px 0 20px;display: block;text-align: left;font: normal normal 400 10px/20px Roboto;letter-spacing: 0px;color: #FFFFFF;">
+                            Comparado con un concreto de referencia
+                            <br>(convencial o equivalente)
+                        </span>
+                    </div>
+                    
+                    <div style="width: 231px;background: #E71618 0% 0% no-repeat padding-box;border-radius: 0px 0px 6px 6px;opacity: 1;">
+                        <p id="horas-ganadas" style="padding:30px 20px 30px 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;text-align: center;color: #EAEAEA;font: normal normal 800 24px/24px Roboto;">
+                            12 hrs
+                        </p>
+                    </div>
+                </div>
+            
+                
+                <div style="width: 231px;">
+                    <div style="background-color: black; color: white;border: 1px solid #E71618;border-radius: 6px 6px 0px 0px;height: 110px;opacity: 1;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Precio Chronolia (m3)
+                        </p>
+                    </div>
+                    <div style="width: 231px;height: 90px;background: #E71618 0% 0% no-repeat padding-box;border-radius: 0px 0px 6px 6px;opacity: 1;">
+                        <p id="precio-chronolia" style="padding:30px 20px 30px 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;text-align: center;color: #EAEAEA;font: normal normal 800 24px/24px Roboto;">
+                            $2,060
+                        </p>
+                    </div>
+                </div>
+              
+                
+                <div style="width: 231px;">
+                    <div style="background-color: black; color: white;border: 1px solid #E71618;border-radius: 6px 6px 0px 0px;height: 110px;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio logrado con Chronolia
+                        </p>
+                    </div>
+                    <div style="width: 231px;height: 90px;background: #E71618 0% 0% no-repeat padding-box;border-radius: 0px 0px 6px 6px;opacity: 1;">
+                        <p id="beneficio-logrado" style="padding:30px 20px 30px 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;text-align: center;color: #EAEAEA;font: normal normal 800 24px/24px Roboto;">
+                            $ 79,250
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div style="width: 231px;">
+                    <div style="background-color: black; color: white;border: 1px solid #E71618;border-radius: 6px 6px 0px 0px;height: 110px;opacity: 1;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio logrado con Chronolia / m3
+                        </p>
+                        
+                    </div>
+                    <div style="width: 231px;height: 90px;background: #E71618 0% 0% no-repeat padding-box;  border-radius: 0px 0px 6px 6px;opacity: 1;">
+                        <p id="beneficio-logrado-m3" style="padding:30px 20px 30px 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;text-align: center;color: #EAEAEA;font: normal normal 800 24px/24px Roboto;">
+                            $ 793/m3
+                        </p>
+                    </div>
+                </div> -->
+            </section>
+        
+        
+        </section>
+        <!--FIN cuatro columnas rojas FIN-->
+
+        <!-- formularios -->
+        <form action="">
+            
+            <!-- Holcim Conecta tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Incentivo comercial
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Capacítate y profesionaliza a tu personal
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 50,00
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <div style="display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo Operacional</p>
+                            <p style="padding: 0; margin: 0; font: normal normal 400 18px/24px Roboto;">$ 120,000</p>
+                        </div>
+                        <div style="margin: 15px 0; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo Operacional</p>
+                            <p style="padding: 0; margin: 0; font: normal normal 400 18px/24px Roboto;">$ 120,000</p>
+                        </div>
+                        <input type="reset" value="Limpiar" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Asesoría Técnica tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Asesoría Técnica
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Acompañamiento y asesoría en obra sobre la aplicación de productos Holcim
+                        </p>
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 7,13
+                        </h2>
+                    </div>
+                    
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <div style="margin-bottom: 15px; display: flex; justify-content: space-around;width: 314px;padding:20px 0;border: 1px solid #207fe6;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo Operacional</p>
+                            <p style="padding: 0; margin: 0; font: normal normal 400 18px/24px Roboto;">$ 120,000</p>
+                        </div>
+                        <input type="reset" value="Limpiar" style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #207fe6;">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Resultados tres columnas BG Black  -->
+            <section style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; line-height: 1.3;">
+                            Construyamos <span style="color: #207fe6;">Valor</span> juntos
+                        </h2>
+                        <!-- <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Acompañamiento y asesoría en obra sobre la aplicación de productos Holcim
+                        </p> -->
+                    </div>
+                </div>
+            
+                 <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Valor estimado por tonelada
+                        </p>
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 344,00
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Beneficio anual estimado
+                        </p>
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 619,194.05
+                        </h2>
+                        <p style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Puntos PrograMas
+                        </p>
+                        <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            x
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--FIN tres columnas segunda fila FIN-->
+        </form>
+
+        <footer  style="background-color: black; width: 100%;display: inline-block; color: white;"> 
+            <section style="display: flex;align-items: center;justify-content: space-between;padding:45px 9.96vw">
+                <p style="margin:0;text-align: left;font: normal 400 30px/37px 'Open Sans', sans-serif;letter-spacing: 0px;color: #FFFFFF;opacity: 1;line-height: 1.4;">
+                    <span style="display:block;text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                        Calculadora
+                    </span>
+                    Valor Holcim
+                </p> 
+                <!-- <h2 style="padding:15px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; line-height: 1.3;">
+                    Construyamos
+                </h2> -->
+                
+               <!-- btn-nueva cotizacion -->
+               <a href="#" onclick="reload()" style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;display: flex;align-items: center;text-decoration: none;"title="Nueva">
+                    Nueva cotización 
+                    <span style="background-color: #207fe6;background-position: center;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAtElEQVQ4jeWTvQ4BQRRGz8g2OgmJTucVvIBCI/EYSr128TwShUK8gp9WpxURBfXRbGTJsovS192533funUkGnqSO1JVafe7lSh2rF/WqrotASqlwDHSBAbAAZsBSrRWZHKtbtab21GnqfPMWkg4n9R2Q1JPkTSpZ+QgoA+0QwjHLEEIYqiegAZyLXOdhgzyV8i1/CfATcJbxADS/3Qg1Uvdq5xdIRz2ofbX+LaSlzpPf+Uq7G8gcq6d6gkVNAAAAAElFTkSuQmCC');background-repeat:no-repeat;opacity: 1; border-radius: 50%;width: 60px;height: 60px;margin-left: 30px;"></span>
+                </a>
+            </section>
+            <!-- <section id="new-footer" style="display: flex;align-items: center; justify-content: center; padding:1px 9.96vw">
+                
+                <p style="width:100%;text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #707070;">
+                    Esta calculadora es simplemente una herramienta para ayudar a los clientes a entender el costo/beneficio de usar Chronolia® en comparación con productos alternos. El costo/beneficio real dependerá de los hechos relacionados con el trabajo particular para el que se está considerando Chronolia® y, por lo tanto, esta calculadora no es una garantía de ningún resultado financiero en particular.
+                </p>
+
+            </section> -->
+
+            <!-- mandar mail descargar  -->
+            <section id="new-footer" style="display: flex;align-items: center;justify-content: space-between;padding:45px 9.96vw">
+
+                <div style="display:flex;">
+                    <p style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                        Compartir resultados
+                    </p> 
+
+                    <!-- btn mandar por email -->
+                    <a href="#" style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;display: flex;align-items: center;text-decoration: none;background-color: #207fe6;background-position: center;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABmJLR0QA/wD/AP+gvaeTAAABj0lEQVQ4jbWUPWtUQRiFz5m9BkWwe3d2QUhrJYiISLTwo7D0JygRtRHExtJYW9lLigjaWAhWgtoEIREXTWllKtmZ97I/wL1zj9VKit3NuuJTzpx5eM/ADN29L2lT0hWSK1gCSb9IfgRwiymllyT3zewxyfGSwiPu/kTSakXynCSNRqNjAJYS1nV9lORJAOcDgCqEcLyUspdzvvS3spTSmqQ9ACcAdAIANE3zQNI9AK9yzs8kHXqXkqqU0gbJ15IehhDuA0CYBGKM70opZ0iuuvsgpXR6TsVT7r5D8gLJszHGN5O9cDDY7/fdzG5IekryQ875kaQ/GUl09ztt224DeGFm183s50FHNW2CGOPWcDjcDiFs1XV9ra7rm6WUxt2fA4gkL5rZ92lnw7RFAOj1ej/M7HLbtp/ath2Q/Cbpq5mtzZLNnHACyQbAhru/BcBut/tlXv5Q4QQzGyySA+ZUXpb/IiydTmeh6vMYj8cVgCZI+gzg9iKvYxaSVkIIdyXtMufcA7Ap6eo/fl/vAaz/BtdzxF5kIXZfAAAAAElFTkSuQmCC');background-repeat:no-repeat;opacity: 1; border-radius: 50%;width: 60px;height: 60px;margin-left: 30px;" title="Enviar"></a>
+
+                    <!-- btn descargar -->
+                    <a href="#" style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;display: flex;align-items: center;text-decoration: none;background-color: #207fe6;background-position: center;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEUAAAD////////////////b29vt7e3o6Ojp6enp6enp6enq6urp6enp6enq6urq6urq6urr6+vr6+vq6urq6urq6urp6enq6urq6urq6urq6urq6urq6up0zJjhAAAAHHRSTlMAAQMFBgcOODlQUW2AgoOGrq+wtc7P1dbY2vz+4CYE1QAAAAFiS0dEAf8CLd4AAABcSURBVBjTpc3NGkAgEIXhQ8lPQxQK3f91WkzPo1j6VnPezQCc1igj+geqZqhVAmMliCCtSSBm1xCJxTV4ZBqzDYglBCv5PljWjXdALN+fX7iqF/gh371H52PW3t67hgUEwsj4hQAAAABJRU5ErkJggg==');background-repeat:no-repeat;opacity: 1; border-radius: 50%;width: 60px;height: 60px;margin-left: 20px;" title="Descargar" ></a>
+                </div>
+                
+                <p style="width:335px;text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #707070;">
+                    Este ejercicio no representa una cotización final, para obtener una cotización favor de contactar a tu asesor comercial.
+                </p>
+                
+            </section>
+            
+        </footer>
+    </main>
+    <script>
+        function formatNumber(num) {
+            let rounded = Math.round(num * 100) / 100;
+            return rounded.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+
+        function getPercentVolume(idSegment) {
+            let volume = 0;
+            if(idSegment == 'minorista') return volume;
+            return volume = idSegment == 'mayorista' ? 0.5 : 0.7;
+        }
+
+        function getProbability(idSegment) {
+            let probability = 0;
+            if(idSegment == 'minorista') return probability;
+            return probability = idSegment == 'mayorista' ? 0.333 : 0.5;
+        }
+
+        function getBrandingBySize(size) {
+            let costo = 0;
+            if(idSegment == 'minorista') return costo;
+            return costo = idSegment == 'mayorista' ? 0.333 : 0.5;
+        }
+
+        const app = {
+            init() {
+                this.addEvents();
+            },
+            addEvents(){
+
+                const meses = 12;
+                const kte_modulo_operacional = 800;
+                const kte_modulo_estrategico = 1500;
+                const kte_costo_asesoria_hora = 1605;
+                let porcentaje_vol = 0;
+                const MXNt = 20;
+                let probabilidad = 0;
+                let costo_branding = 0;
+
+                // inputs
+
+                let modulo_operacional = document.getElementById('modulo-operacional');
+                let modulo_estrategico = document.getElementById('modulo-estrategico');
+
+                const vol_promedio_compra_mes = document.getElementById('vol-promedio-compra-mes');
+                const precio_promedio = document.getElementById('precio-promedio');
+
+                let hrs_asesoria_anual = document.getElementById('hrs-asesoria-anual');
+
+
+                let brandeo_PDV = document.getElementById('brandeo-PDV');
+                let eventos_aniversario = document.getElementById('eventos-aniversario');
+                let exhibidores_mostrador = document.getElementById('exhibidores-mostrador');
+                let kit_activacion = document.getElementById('kit-activacion');
+
+                let percent_compra_cemento = document.getElementById('percent-compra-cemento');
+                let beneficio_mejoravit = document.getElementById('beneficio-mejoravit');
+
+                // outputs
+
+                const holcim_conecta = document.getElementById('holcim-conecta');
+                const asesoria_tecnica = document.getElementById('asesoria-tecnica');
+                const holcim_ahorro = document.getElementById('holcim-ahorro');
+                const prospecta = document.getElementById('prospecta');
+                const branding = document.getElementById('branding');
+                const holcim_extendido = document.getElementById('holcim-extendido');
+                const mejoravit = document.getElementById('mejoravit');
+
+                const enviar_form = document.getElementById('enviar-form');
+                const aplicar_branding = document.getElementById('aplicar-branding');
+                const aplicar_extendido = document.getElementById('aplicar-extendido');
+                const aplicar_mejoravit = document.getElementById('aplicar-mejoravit');
+
+                
+                
+
+                enviar_form.addEventListener('click', (event) => {
+
+                    event.preventDefault();
+
+                    // var elmnt = costo_acabado.offsetTop;
+                    // window.scrollTo({ top: elmnt-70, behavior: 'smooth'});
+                    let val_holcim_conecta = ((kte_modulo_operacional * modulo_operacional.value) + (kte_modulo_estrategico * modulo_estrategico.value)) 
+                                                / (vol_promedio_compra_mes.value * meses);
+                    holcim_conecta.innerText = '$ '+ formatNumber(val_holcim_conecta);
+                    
+                    let val_asesoria_tecnica = hrs_asesoria_anual.value * kte_costo_asesoria_hora / (vol_promedio_compra_mes.value * meses);
+
+                    asesoria_tecnica.innerText = '$ '+ formatNumber(val_asesoria_tecnica);
+
+                    let val_holcim_ahorro = ((vol_promedio_compra_mes.value * meses) * porcentaje_vol * MXNt) 
+                                            / ((vol_promedio_compra_mes.value * meses) * probabilidad);
+
+                    holcim_ahorro.innerText = '$ '+ formatNumber(val_holcim_ahorro);
+
+                    const vol_por_meses = vol_promedio_compra_mes.value * meses;
+
+                    let val_prospecta = 6000 / (vol_por_meses) + (.05 * vol_por_meses * 200) / (vol_por_meses);
+
+                    prospecta.innerHTML = '$ '+ formatNumber(val_prospecta);
+
+                    let val_branding = costo_branding / vol_por_meses;
+
+                    branding.innerHTML = '$ '+ formatNumber(val_branding);
+
+                    setTimeout(function ()
+                    {
+                        if(window.ReactNativeWebView){
+                            window.ReactNativeWebView.postMessage('Hello from the html! ' + val_beneficio_logrado_m3 + ' /m3');
+                        }
+                        
+                    }, 1000);
+                });
+
+
+                aplicar_branding.addEventListener('click', (event) => {
+
+                    event.preventDefault();
+                    const vol_por_meses = vol_promedio_compra_mes.value * meses;
+                    let val_branding = costo_branding / vol_por_meses;
+                    branding.innerHTML = '$ '+ formatNumber(val_branding);
+                });
+
+
+                aplicar_extendido.addEventListener('click', (event) => {
+
+                    event.preventDefault();
+                    const vol_por_meses = vol_promedio_compra_mes.value * meses;
+                    let val_holcim_extendido = 0;
+                    val_holcim_extendido = ( (brandeo_PDV.value * 15000) + (eventos_aniversario.value * 40000) + (exhibidores_mostrador.value * 500) + (kit_activacion.value * 20000)) 
+                                                / vol_por_meses;
+                    holcim_extendido.innerHTML = '$ '+ formatNumber(val_holcim_extendido);
+                });
+
+
+                aplicar_mejoravit.addEventListener('click', (event) => {
+
+                    event.preventDefault();
+                    const vol_por_meses = vol_promedio_compra_mes.value * meses;
+                    let val_venta_estimada_CEM = vol_por_meses * precio_promedio.value;
+                    let val_venta_estimada_TOTAL = val_venta_estimada_CEM / (parseInt(percent_compra_cemento.value) / 100);
+
+                    console.log('val_venta_estimada_CEM >> ', val_venta_estimada_CEM);
+
+                    console.log('val_venta_estimada_TOTAL >> ', val_venta_estimada_TOTAL);
+
+                    let ingreso_adicional = val_venta_estimada_TOTAL * .005 * .30;
+
+                    let val_mejoravit = ingreso_adicional / vol_por_meses;
+
+                    console.log('val_mejoravit >> ', val_mejoravit);
+
+                    mejoravit.innerHTML = '$ '+ formatNumber(val_mejoravit);
+                });
+                
+
+                // select segmento
+                let select_segmento = document.getElementsByClassName('select-segmento');
+
+                for (let i = 0; i < select_segmento.length; i++) {
+                    select_segmento[i].addEventListener("click", onReactionClick);
+                }
+
+                function onReactionClick() {
+                    let segment = this.getAttribute("id");
+
+                    porcentaje_vol = getPercentVolume(segment);
+                    probabilidad = getProbability(segment);
+                    console.log('segment vol> ', porcentaje_vol);
+                    console.log('segment probability> ', probabilidad);
+
+                    for (let i = 0; i < select_segmento.length; i++) {
+                        select_segmento[i].classList.remove("active");
+                    }
+                    this.classList.add("active");
+                }
+
+
+                
+                // branding size
+                let branding_size = document.getElementsByClassName('branding-size');
+
+                for (let j = 0; j < branding_size.length; j++) {
+                    branding_size[j].addEventListener("click", onSizeClick);
+                }
+
+                function onSizeClick() {
+                    let size_id = this.getAttribute("id");
+                    let size_amount = this.getAttribute("data-amount");
+
+                    costo_branding = size_amount;
+
+                    for (let j = 0; j < branding_size.length; j++) {
+                        branding_size[j].classList.remove("active");
+                    }
+                    this.classList.add("active");
+                }
+                
+                //return;
+                // > Inputs
+                // D-10
+                //let volumen_concreto = document.getElementById('volumen-concreto'); 
+                // D-11
+                //let precio_concreto = document.getElementById('precio-concreto');
+                
+                
+            }
+        };
+        /* nuevo */
+        function reload(){
+            location.reload();
+        }
+        /* INICIA */
+        window.onload = function () {
+            app.init();
+        }
+    </script>
+    
+    <script src="/index.js"></script>
+</body>
+</html>

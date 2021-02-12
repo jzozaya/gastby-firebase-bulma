@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLCIM-Aliados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.css">
+
+
+    <style>
+        * {
+            font-family: "Roboto";
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #EAEAEA;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #70707080;
+            text-align: center;
+        }
+
+        input:-moz-placeholder {
+            /* Firefox 18- */
+            color: #70707080;
+            text-align: center;
+        }
+
+        input::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #70707080;
+            text-align: center;
+        }
+
+        input:-ms-input-placeholder {
+            color: #70707080;
+            text-align: center;
+        }
+
+        input.icon {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAMAAAAMs7fIAAAAZlBMVEUAAAD///+AgICOjo6AgICLi4uAgICJiYmIiIiAgICAgICAgICCgoKCgoKBgYGBgYGAgICBgYGAgICBgYGAgICBgYGAgICBgYGAgICBgYGBgYGAgICBgYGBgYGBgYGBgYGBgYGAgICX3hyyAAAAInRSTlMAAQgJCgsMDQ8QKC4vO09RXGFiZWZnaGtsbW9yc3V3e3+At5h0XAAAAAFiS0dEAf8CLd4AAABsSURBVBjTlczJFoJAEEPRqGXjhM3YAg7w/v8nXSldCxfWLvckJa23j6+p3GQQbgDlCsVIOp6YHJgOPD1Y4uqhZ7Dv02TadozFn9D+BjUk065n+EBYZg+6ULmJFGmqOWtId2CpM1D9iOeQZb0BXXUKmjelzJUAAAAASUVORK5CYII=');
+            background-repeat: no-repeat;
+            background-position: 90%
+        }
+
+        input.icon:focus {
+            background-image: none;
+        }
+
+        .selectdiv {
+            align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            background-color: #fff;
+            border-radius: 0px 0px 6px 6px;
+            color: #707070;
+            border: none !important;
+        }
+
+        .selectdiv::after {
+            content: '';
+            width: 10px;
+            height: 9px;
+            right: 20px;
+            top: 40%;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAQAAAChr3WYAAAAAmJLR0QA/4ePzL8AAABfSURBVAjXYzDebPoOFRpvZjAxNPlr8h8J/jM1ZWBgMFmEIriQAQQspU2+wIW+GcsxQIBJA1ywngEGLDlNHoKEjJ/ocTMggEkcWF0sAwpgNDllco6BCVWQwdjG2AbGBgDn2TeTjg3T0AAAAABJRU5ErkJggg==');
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .place::placeholder {
+            font: normal normal 400 10px/24px Roboto;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .selectdiv select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            text-align-last: center;
+            font: normal normal 500 16px/19px Roboto;
+            letter-spacing: 0px;
+            color: #707070;
+            border: none !important;
+        }
+
+        .selectdiv select:focus,
+        input:focus {
+            outline: #FFF auto 0px;
+        }
+
+        .selectdiv select option {
+            background-color: #ffffff;
+            color: #707070;
+        }
+
+        .selectdiv select option:disabled {
+            color: #70707080;
+        }
+
+        .btn-active-blue {
+            background: #207fe6 0% 0% no-repeat padding-box;
+            border: unset;
+            color: #FFFFFF;
+        }
+
+        .soloNumeros::before{
+           
+
+
+        }
+
+        .select-segmento.active {
+            border: unset;
+            color: #FFFFFF !important;
+            background-color: #E71618;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAQAAAAu0KdMAAAASUlEQVR42nXJQQGAIBAAwY1wUYxiMyNYwQg0kCZGWB/wgYP5DiwYvt5sS/XcVzUwvDyWBVb1az0V+GjrVGBYe881dK6hc/UuuX7Ga3WGUEAJ8AAAAABJRU5ErkJggg==');
+            background-position-x: 25px;
+            background-repeat: no-repeat;
+            background-position-y: center;
+        }
+
+        .select-tipo.active {
+            border: unset;
+            color: #FFFFFF !important;
+            background-color: #E71618 !important;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAQAAAAu0KdMAAAASUlEQVR42nXJQQGAIBAAwY1wUYxiMyNYwQg0kCZGWB/wgYP5DiwYvt5sS/XcVzUwvDyWBVb1az0V+GjrVGBYe881dK6hc/UuuX7Ga3WGUEAJ8AAAAABJRU5ErkJggg==');
+            background-position-x: 25px;
+            background-repeat: no-repeat;
+            background-position-y: center;
+        }
+
+        .branding-size.active {
+            background: #207fe6 0% 0% no-repeat padding-box;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 220px;
+            background-color: #363636;
+            padding: 10px 0;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            width: 200px;
+        }
+
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-button-next {
+            right: 0px;
+            left: auto;
+            background-color: black;
+            height: 100%;
+            width: 90px;
+            top: 0;
+            margin: 0;
+        }
+
+        .swiper-button-next:after {
+            content: '';
+            width: 10px;
+            height: 9px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid white;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+        }
+
+
+        /* modal */
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .modal-content h2 {
+            padding: 79px 0 40px;
+            text-align: center;
+            margin: 0;
+            font: normal normal bold 50px/60px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+        }
+
+        .modal-content .selectInput {
+            width: 64.06vw;
+            height: 60px;
+            border: 1px solid #9B9B9B;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .selectInput>p::first-letter {
+            text-transform: uppercase;
+        }
+
+        .selectedrop,
+        .selectInput>p {
+            text-transform: lowercase;
+        }
+
+        .selectedrop::first-letter {
+            text-transform: uppercase;
+        }
+
+        .selectedrop::after {
+            content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAYAAACE2W/HAAAAYElEQVR4AWMgFgTcNxAIuGd6PuCu6XzSNd0z+w/G980CSNIExRdAYmAJoPX9AfdNDYjWBAIgDkTQ9D1EM2FNMI0bIBIIzQQ0IUwGSSBrxqcJv2bCmjA1o2siJb4OEKMJADEkkYHc0qZJAAAAAElFTkSuQmCC);
+            text-align: center;
+            padding-left: 5px;
+        }
+
+        .modal-content .selectInput p {
+            pointer-events: none;
+            font: normal normal medium 18px/21px Roboto;
+        }
+
+
+        /* The Close Button */
+        .close {
+            color: rgb(73, 66, 66);
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+
+
+        /* modal eliminar */
+
+        .black {
+            background-color: #151515cc;
+        }
+
+        .black .modal-content {
+            position: absolute;
+            background-color: #FAFAFA;
+            /* margin: auto; */
+            padding: 0;
+            height: 530px;
+            width: 492px;
+            box-sizing: border-box;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            border-radius: 6px;
+        }
+
+        .black .modal-content .close {
+            color: white;
+        }
+
+        #mensaje {
+            background: #343434 0% 0% no-repeat padding-box;
+            border-radius: 6px 6px 0px 0px;
+            opacity: 1;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        #mensaje h2 {
+            padding: 0 82px;
+            margin: 0;
+            text-align: center;
+            font: normal normal bold 24px/24px Roboto;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+        }
+
+        #botones {
+            background: #FAFAFA 0% 0% no-repeat padding-box;
+            border-radius: 0 0 6px 6px;
+            opacity: 1;
+            height: 50%;
+            position: relative;
+        }
+
+        #botones .center {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+        }
+        .precio{
+            border: unset!important;
+            text-align: center;
+            font: normal normal 500 16px/23px Roboto;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            position: absolute;
+            display: inline-block;
+            margin-left: 35px;
+        }
+    </style>
+
+</head>
+
+<body style="border: 0px;padding: 0px; margin: 0px;box-sizing: border-box;width: 100%;">
+    <main
+        style="top: 0px; left: 0px;min-height: 100vh;background: #EAEAEA 0% 0% no-repeat padding-box;opacity: 1;height: auto; max-width: 1080px;width: 1080px; overflow-x: hidden;">
+
+        <!-- formularios -->
+        <form action="">
+            <!-- ciudad -->
+            <section id="direccion"
+                style="display: flex;margin: 30px 20px 12px; margin-top: 0; padding-top: 30px; position: relative;">
+
+                <p
+                    style="display:inline-block;margin: 0;width: 380px;text-align: left;font: normal normal 400 28px/24px Roboto; line-height: 1.35; letter-spacing: 0px;color: #707070;opacity: 1;">
+                    Seleccione y llene los campos con información específica del proyecto.
+                </p>
+
+            </section>
+
+            <!-- tres columnas Primer fila-->
+            <section
+                style="display: flex;justify-content: space-around; padding: 30px 0 15px 0; box-sizing: border-box;">
+                <div>
+                    <div
+                        style="width: 314px;height: 90px;background: #343434 0% 0% no-repeat padding-box;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Nombre cliente
+                        </p>
+                    </div>
+
+                    <!-- input 1 -->
+                    <div style="background-color:white;color: #707070;">
+                        <input placeholder="Ingrese Nombre" id="nombre-cliente" value="" class="sololetras alert"
+                            name="nombre-cliente" type="text" required autocomplete="off"
+                            style="width: 100%;padding:20px 0px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+
+                    </div>
+                </div>
+
+                <!-- input 2 -->
+                <div>
+                    <div
+                        style="width: 314px;height: 90px;background: #343434 0% 0% no-repeat padding-box;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Volumen mensual
+                        </p>
+                    </div>
+
+                    <div style="background-color:white;color: #707070;">
+                        <input placeholder="Ingrese cantidad" id="vol-promedio-compra-mes" value=""
+                            class="soloNumeros alert" name="vol-promedio-compra-mes" type="text" required
+                            autocomplete="off"
+                            style="width: 100%;padding:20px 0px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                    </div>
+                </div>
+
+                <!-- input 3 -->
+                <div>
+                    <div
+                        style="width: 314px;height: 90px;background: #343434 0% 0% no-repeat padding-box;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Número de plantas
+                        </p>
+                    </div>
+                    <div style="background-color:white;color: #707070;">
+                        <input placeholder="Ingrese cantidad" id="numeroPlantas" value="" class="soloNumeros alert"
+                            name="numeroPlantas" type="text" required autocomplete="off"
+                            style="width: 100%;padding:20px 0px;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ************* -->
+            <!-- SECCION NIVEL -->
+            <!-- ************* -->
+            <h2
+                style="margin: 0; color: #171717; font: normal normal 700 28px/24px Roboto;letter-spacing: 0px; padding: 10px 30px 0px 30px;">
+                Nivel</h2>
+
+            <!-- tres columnas Primer fila-->
+            <section
+                style="display: flex;justify-content: space-around; padding: 30px 5px 40px; box-sizing: border-box;">
+                <div>
+                    <input class="select-segmento" id="diamante" type="button" value="Diamante"
+                        style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                </div>
+
+                <!-- input 2 -->
+                <div>
+                    <input class="select-segmento" id="oro" type="button" value="Oro"
+                        style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                </div>
+
+                <!-- input 3 -->
+                <div>
+                    <input class="select-segmento" id="plata" type="button" value="Plata"
+                        style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                </div>
+            </section>
+        
+
+            <!-- ******************* -->
+            <!-- BOTONES DE CABECERA -->
+            <!-- ******************* -->
+            <section style="position: relative;display: flex;justify-content: flex-end;padding: 15px 20px 30px 20px;">
+                <span id="errorAlert"
+                    style="color:red; font-size: 14px;align-self: center;margin-right: 30px;font: normal normal 400 12px/24px Roboto;"></span>
+                <input id="enviar-form" type="submit" value="Aplicar"
+                    style="cursor:pointer;margin-right: 43px;border:unset;width: 314px;padding:20px 0;background: #E71618 0% 0% no-repeat padding-box;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                <input type="reset" value="Limpiar" class="reset" onclick="reload()"
+                    style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #343434;opacity: 1; margin-right: 6px;">
+            </section>
+
+
+            <!-- ************** -->
+            <!-- Holcim Conecta -->
+            <!-- ************** -->
+            <section id="sect-conecta"
+                style="display: none;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 365px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <h2
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Holcim Conecta
+                        </h2>
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Capacítate y profesionaliza a tu personal
+                        </p>
+                    </div>
+                </div>
+
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 class="resultadoAsumar" id="holcim-conecta"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <div
+                            style="display: flex; justify-content: space-around;align-items: baseline;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo
+                                Operacional:</p>
+                            <span class="precio">$</span>
+                            <input placeholder="Ingrese Cantidad" id="modulo-operacional"
+                                class="soloNumeros place alert" name="modulo-operacional" type="text" required
+                                autocomplete="off"
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+
+                        </div>
+                        <div
+                            style="margin: 15px 0; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Módulo
+                                Estratégico:</p>
+                            
+                            <span class="precio">$</span>
+
+                            <input placeholder="Ingrese Cantidad" id="modulo-estrategico"
+                                class="soloNumeros place alert" name="modulo-estrategico" type="text" required
+                                autocomplete="off"
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                        </div>
+
+                        <input type="button" value="Aplicar" id="btn-conecta"
+                            style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #E71618;">
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ************** -->
+            <!-- Club de Compra -->
+            <!-- ************** -->
+            <section id="sect-club-compra"
+                style="display:none;background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                
+                <!-- Club de compra descripcion -->
+                <div>
+                    <div style="width: 365px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <h2
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Club de compras
+                        </h2>
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Ahorros a través de negociaciones con proveedores de gran relevancia para tu operación
+                        </p>
+                    </div>
+                </div>
+
+                <!-- tipo de cliente -->
+                <div>
+                    <div style="width: 314px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <h2
+                            style="padding:35px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Tipo de cliente</h2>
+                    </div>
+
+                    <!-- tres columnas Primer fila-->
+                    <div
+                        style="display: flex;justify-content: space-around; padding: 20px 0 5px 0; box-sizing: border-box;">
+                        <!-- Aliado -->
+                        <div>
+                            <input class="select-tipo" id="aliado" type="button" value="Aliado" data-value="Aliado"
+                                style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;background-color: transparent;">
+                        </div>
+
+                        <!-- Industrial -->
+                        <div>
+                            <input class="select-tipo" id="industrial" type="button" value="Industrial"
+                                data-value="Industrial"
+                                style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;background-color: transparent;">
+                        </div>
+
+                        <!-- distribuidor -->
+                        <div>
+                            <input class="select-tipo" id="plata" type="button"
+                                data-value="Distribuidor" value="Distribuidor tradicional"
+                                style="cursor:pointer; border: 1px solid #707070; width: 314px;padding:20px 0;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;background-color: transparent;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ********** -->
+                <!-- resultados -->
+                <!-- ********** -->
+                <div id="resultados"
+                    style="display: none; padding:20px;margin:30px 0 0;box-sizing: border-box;border-top: 1px solid rgb(112, 112, 112);">
+
+                </div>
+
+                <!--*******************-->
+                <!-- articulos selects -->
+                <!--*******************-->
+                <div id="select-productos" style="display: none;">
+                    <!-- articulo -->
+                    <div
+                        style="padding:35px 20px 0 20px;width: 100%;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;box-sizing: border-box;">
+                        <h2
+                            style="margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Articulo
+                        </h2>
+                        <div id="btn-articulo" data-active="false"
+                            style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAQAAAChr3WYAAAASUlEQVR4AV3BAQkAIRBFwQ9mMIQmMYqRjLJFLGEG4R2LJ+c5I4ybiczkNMmSaJyaHJHBNohaqGxVG4GO6wR9KLiiPwzTjUTS6wG6SmNlT4Eq4QAAAABJRU5ErkJggg==');background-repeat: no-repeat;background-position: 95% center;display:flex;align-items: center;justify-content: center;margin-top: 20px;width: 100%; height: 60px;border: 1px solid #343434;border-radius: 6px;opacity: 1; cursor: pointer;">
+
+                            <p id="nameArt" style="margin:0; pointer-events: none;">Articulos <span
+                                    id="contArt">(-)</span></p>
+
+                        </div>
+                    </div>
+                    <!-- marca -->
+                    <div
+                        style="padding:35px 20px 0 20px;width: 100%;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;box-sizing: border-box;">
+                        <h2 id="titMar"
+                            style="margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; color:#34343480;">
+                            Marca
+                        </h2>
+                        <div id="btn-marca" data-active="false"
+                            style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAACqADAAQAAAABAAAACQAAAABfEOAfAAAAmklEQVQYGWM0NjbewcjI6M6AB/z//38n079//4qAav7iUfcXpIbp/Pnz14CK5uBROAekhgmk4O/fv7VA41+jKwaJgeRA4swg4sWLF9+kpKQ+A93qA+IjgZJz584dAvEZkQSZgR67BFSsBRIDmnbt7NmzekAm2P1gq6GK/wIli6FskEIQG7cnQcEFwjANMJoFxoDRQJMKYWxkGgCCukVzSAZVJwAAAABJRU5ErkJggg==');background-repeat: no-repeat;background-position: 95% center;display:flex;align-items: center;justify-content: center;margin-top: 20px;width: 100%; height: 60px;border: 1px solid #343434;border-radius: 6px;opacity: 1; cursor: no-drop; color:#343434;">
+
+                            <p id="nameMar" style="margin:0; pointer-events: none;">Marca <span
+                                    id="countMarca">(-)</span></p>
+
+                        </div>
+                    </div>
+                    <!-- modelo -->
+                    <div
+                        style="padding:35px 20px 0 20px;width: 100%;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;box-sizing: border-box;">
+                        <h2 id="titMod"
+                            style="margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; color:#34343480;">
+                            Modelo
+                        </h2>
+                        <div id="btn-prod" data-active="false"
+                            style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAACqADAAQAAAABAAAACQAAAABfEOAfAAAAmklEQVQYGWM0NjbewcjI6M6AB/z//38n079//4qAav7iUfcXpIbp/Pnz14CK5uBROAekhgmk4O/fv7VA41+jKwaJgeRA4swg4sWLF9+kpKQ+A93qA+IjgZJz584dAvEZkQSZgR67BFSsBRIDmnbt7NmzekAm2P1gq6GK/wIli6FskEIQG7cnQcEFwjANMJoFxoDRQJMKYWxkGgCCukVzSAZVJwAAAABJRU5ErkJggg==');background-repeat: no-repeat;background-position: 95% center;display:flex;align-items: center;justify-content: center;margin-top: 20px;width: 100%; height: 60px;;border-radius: 6px;opacity: 1;border: 1px solid #34343480; cursor: no-drop;color:#343434;">
+
+                            <p id="nameProd" style="margin:0; pointer-events: none;">Modelo <span
+                                    id="countModelo">(-)</span></p>
+
+                        </div>
+                    </div>
+                    <!-- brn aplicar -->
+
+                    <div id="btn-nuevoArticulo"
+                        style="padding:35px 20px 0 20px;width: 100%;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;box-sizing: border-box;">
+
+
+                        <div id="ocultar"
+                            style="display: none;align-items: center;justify-content: center;margin-top: 20px;width: 47%;height: 60px; border-radius: 6px;opacity: 1;cursor: pointer;background: transparent;background: #E71618 0% 0% no-repeat padding-box;">
+
+                            <p style="margin:0;">Cancelar Articulo
+                            </p>
+
+                        </div>
+
+                        <div id="aplicarArticulo" data-active="false"
+                            style="display: flex;align-items: center;justify-content: center;margin-top: 20px;width: 100%;height: 60px;border: 1px solid #343434;border-radius: 6px;opacity: 1;cursor: no-drop;background: transparent;">
+
+                            <p style="margin:0;">Aplicar a lista</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- agregar producto /resultado -->
+                <div id="resultadoTotal" style="display: none;padding:20px;box-sizing: border-box;">
+
+                    <!-- btn agregar -->
+                    <div
+                        style="padding:0px 20px 0 20px;width: 100%;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;box-sizing: border-box;">
+                        <div id="agregar-otro"
+                            style="display:flex;align-items: center;justify-content: center;margin-top: 20px;width: 100%; height: 60px;border: 1px solid #E71618;border-radius: 6px;opacity: 1;background-color: #E71618; cursor:pointer">
+
+                            <p style="margin:0;">Agregar otro Articulo</p>
+
+                        </div>
+                    </div>
+                    <!-- resultados -->
+                    <div id="res-fin-beneficio" style="display: flex;padding:40px 20px 0 100px;">
+                        <h2
+                            style="width: 330px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            <span style="color:#E71618;">Beneficio</span> Holcim
+                        </h2>
+                        <div>
+                            <div
+                                style="width: 300px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                                <p
+                                    style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                                    Beneficio Holcim anual
+                                </p>
+                                <h2 id="holcimahorroAnual"
+                                    style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #50DE36;opacity: 1;">
+                                    $ 0</h2>
+                            </div>
+                            <div
+                                style="width: 300px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                                <p
+                                    style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                                    Beneficio por tonelada
+                                </p>
+                                <h2 id="holcimahorroTone" class="resultadoAsumar"
+                                    style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #ffffff;opacity: 1;">
+                                    $ 0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- **************** -->
+            <!-- Asesoría Técnica -->
+            <!-- **************** -->
+            <section id="sect-asesoria"
+                style="display:none;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 365px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <h2
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Asesoría Técnica
+                        </h2>
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Diseño y control de mezclas, aseguramiento de calidad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 class="resultadoAsumar" id="asesoria-tecnica"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <div
+                            style="margin-bottom: 15px; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Horas de
+                                asesoría anual:</p>
+                            <input placeholder="Ingrese Cantidad" id="hrs-asesoria-anual"
+                                class="soloNumeros alert place" name="hrs-asesoria-anual" type="text" required
+                                autocomplete="off"
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+
+                        </div>
+                        <input id="btn-asesoria" type="button" value="Aplicar"
+                            style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #E71618;">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ****************** -->
+            <!-- Holcim CEM Supply  -->
+            <!-- ****************** -->
+            <section id="sect-supply"
+                style="display: none;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border-bottom: 1px solid #707070;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 365px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <h2 style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Holcim CEM Supply
+                        </h2>
+                        <p style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            La solución digital inteligente que ayuda a mantener un nivel óptimo en los inventarios de cemento. Reducción de riesgo
+                            de fallas en el suministro por falta de cemento. Mayor tiempo disponible para el servicio al cliente. Mayor capacidad de
+                            programación. Mayor confianza en la programación. Mejora la imagen de la empresa al tener siempre disponibilidad de
+                            suministro.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 class="resultadoAsumar" id="holcim-supply"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ********************* -->
+            <!-- Software vertical RMX -->
+            <!-- ********************* -->
+            <section id="sect-softwareRmx"
+                style="display:none;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 365px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <h2
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Software vertical RMX
+                        </h2>
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Este elemento tiene como beneficios ofrecer un sistema con un valor de mercado "X" y un potencial de optimización en sus procesos de producción.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 class="resultadoAsumar" id="softwareRmx"
+                        style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <div
+                            style="margin-bottom: 15px; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Valor de la licencia:</p>
+                            <span class="precio">$</span>
+                            <input placeholder="Ingrese Cantidad" class="soloNumeros alert place" id="valor-licencia" name="valor-licencia"
+                                type="text" required autocomplete="off" value=""
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">                        
+                        </div>
+                        <div
+                            style="margin-bottom: 15px; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Potencial de optimización:</p>
+                            <span class="precio">$</span>
+                            <input placeholder="Ingrese Cantidad" class="soloNumeros alert place" id="potencialOptim" name="potencialOptim"
+                                type="text" required autocomplete="off" value=""
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+
+                        
+                        </div>
+
+                        <input type="button" id="aplicar-softwarV" value="Aplicar"
+                            style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #E71618;">
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ************************* -->
+            <!-- Certificación Aliados RMX -->
+            <!-- ************************* -->
+            <section id="sect-certificacionRmx"
+                style="display:none;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 365px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+            
+                        <h2 style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/35px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Certificación Aliados RMX
+                        </h2>
+                        <p style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Este elemento tiene como beneficios ofrecer una certificación con un valor de mercado "X" y un potencial de optimización
+                            en sus procesos de producción.
+                        </p>
+                        
+                    </div>
+                </div>
+            
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 class="resultadoAsumar" id="certifRmx"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+            
+                </div>
+            
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+            
+                        <div
+                            style="margin-bottom: 15px; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Valor certificación:</p>
+                            <span class="precio">$</span>
+                            <input placeholder="Ingrese Cantidad" class="soloNumeros alert place" id="valorCertificacion"
+                                name="valorCertificacion" type="text" required autocomplete="off" value=""
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+            
+            
+                        </div>
+                        <div
+                            style="margin-bottom: 15px; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Potencial de optimización:
+                            </p>
+                            <span class="precio">$</span>
+                            <input placeholder="Ingrese Cantidad" class="soloNumeros alert place" id="potencialCertificacion"
+                                name="potencialCertificacion" type="text" required autocomplete="off" value=""
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+            
+            
+                        </div>
+            
+                        <input type="button" id="aplicar-certificacion" value="Aplicar"
+                            style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #E71618;">
+                    </div>
+            
+                </div>
+            </section>
+
+            <!-- ************** -->
+            <!--  Construleads  -->
+            <!-- ************** -->
+            <section id="sect-construleads"
+                style="display:none;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 365px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+            
+                        <h2
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Construleads
+                        </h2>
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            El beneficio que obtiene el cliente va enfocado al acceso a una base de datos de proyectos de
+                            construcción con información para generar contactos y prospección de clientes.
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio por tonelada
+                        </p>
+                        <h2 class="resultadoAsumar" id="construleadsMonto"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+                </div>
+            
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <div
+                            style="margin-bottom: 15px; display: flex; justify-content: space-around;align-items: baseline;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+                            <p style="padding: 0; margin: 0; font: normal normal 400 10px/24px Roboto;">Valor captación de
+                                proyectos:</p>
+                            <span class="precio">$</span>
+                            <input placeholder="Ingrese Cantidad" id="capProyectos" class="soloNumeros alert place"
+                                name="capProyectos" type="text" required autocomplete="off" value="50000"
+                                style="width: 30%;border: unset!important;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #000000;">
+            
+                        </div>
+                        <input id="btn-construleads" type="button" value="Aplicar"
+                            style="cursor:pointer;border:unset;width: 314px;padding:20px 0;border: 1px solid #343434;border-radius: 6px;text-align: center;font: normal normal 500 16px/19px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1; background: #E71618;">
+                    </div>
+                </div>
+            </section>
+
+        </form>
+
+        <div id="general" style="display: none;">
+           
+            <!-- Resultados tres columnas BG Black  -->
+            <section
+                style="display: flex;justify-content: space-around; background: #000000; padding: 40px 0 40px 0; box-sizing: border-box; border: 1px solid #707070; border-left: none; border-right: none;">
+                <!-- input 4 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+
+                        <h2
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; line-height: 1.3;">
+                            Construyamos <span style="color: #E71618;">Valor</span> juntos
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- input 5 -->
+                <div>
+                    <div style="width: 314px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Valor estimado por tonelada
+                        </p>
+                        <h2 id="valorEstimadoTotal"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                        <p
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 14px/24px Roboto;letter-spacing: 0px;color: #707070;opacity: 1;">
+                            Beneficio anual estimado
+                        </p>
+                        <h2 id="beneficioAnualEstimado"
+                            style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 200; letter-spacing: 0px;color: #13da3e;opacity: 1;">
+                            $ 0
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- input 6 -->
+                <div>
+                    <div style="width: 314px;min-height: 90px;border-radius: 6px 6px 0px 0px;opacity: 1;color: white;">
+                            <h2
+                                style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; line-height: 1.3;">
+                                RED <span style="color: #E71618;">HOLCIM</span>
+                            </h2>
+                            <p
+                                style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 12px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                                Adicionalmente trabajamos en sinergía con nuestros Aliados compartiendo foros y buenas prácticas para lograr un
+                                crecimiento en conjunto
+                            </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--FIN tres columnas segunda fila FIN-->
+            </form>
+
+            <footer style="background-color: black; width: 100%;display: inline-block; color: white;">
+                <section style="display: flex;align-items: center;justify-content: space-between;padding:45px 9.96vw">
+                    <p
+                        style="margin:0;text-align: left;font: normal 400 30px/37px 'Open Sans', sans-serif;letter-spacing: 0px;color: #FFFFFF;opacity: 1;line-height: 1.4;">
+                        <span
+                            style="display:block;text-align: left;font: normal normal 500 12px/14px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Calculadora
+                        </span>
+                        Valor Aliados
+                    </p>
+                    <!-- <h2 style="padding:10px 20px 0 20px;margin: 0;text-align: left;font: normal normal 400 32px/24px Roboto; font-weight: 600; letter-spacing: 0px;color: #FFFFFF;opacity: 1; line-height: 1.3;">
+                    Construyamos
+                </h2> -->
+
+                    <!-- btn-nueva cotizacion -->
+                    <a href="#" onclick="reload()"
+                        style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;display: flex;align-items: center;text-decoration: none;"
+                        title="Nueva">
+                        Nueva cotización
+                        <span
+                            style="background-color: #E71618;background-position: center;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAtElEQVQ4jeWTvQ4BQRRGz8g2OgmJTucVvIBCI/EYSr128TwShUK8gp9WpxURBfXRbGTJsovS192533funUkGnqSO1JVafe7lSh2rF/WqrotASqlwDHSBAbAAZsBSrRWZHKtbtab21GnqfPMWkg4n9R2Q1JPkTSpZ+QgoA+0QwjHLEEIYqiegAZyLXOdhgzyV8i1/CfATcJbxADS/3Qg1Uvdq5xdIRz2ofbX+LaSlzpPf+Uq7G8gcq6d6gkVNAAAAAElFTkSuQmCC');background-repeat:no-repeat;opacity: 1; border-radius: 50%;width: 60px;height: 60px;margin-left: 30px;"></span>
+                    </a>
+                </section>
+
+                <!-- mandar mail descargar  -->
+                <section id="new-footer"
+                    style="display: flex;align-items: center;justify-content: space-between;padding:45px 9.96vw">
+
+                    <div style="display:flex;">
+                        <p
+                            style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;">
+                            Compartir resultados
+                        </p>
+
+                        <!-- btn mandar por email -->
+                        <a href="#"
+                            style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;display: flex;align-items: center;text-decoration: none;background-color: #E71618;background-position: center;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABmJLR0QA/wD/AP+gvaeTAAABj0lEQVQ4jbWUPWtUQRiFz5m9BkWwe3d2QUhrJYiISLTwo7D0JygRtRHExtJYW9lLigjaWAhWgtoEIREXTWllKtmZ97I/wL1zj9VKit3NuuJTzpx5eM/ADN29L2lT0hWSK1gCSb9IfgRwiymllyT3zewxyfGSwiPu/kTSakXynCSNRqNjAJYS1nV9lORJAOcDgCqEcLyUspdzvvS3spTSmqQ9ACcAdAIANE3zQNI9AK9yzs8kHXqXkqqU0gbJ15IehhDuA0CYBGKM70opZ0iuuvsgpXR6TsVT7r5D8gLJszHGN5O9cDDY7/fdzG5IekryQ875kaQ/GUl09ztt224DeGFm183s50FHNW2CGOPWcDjcDiFs1XV9ra7rm6WUxt2fA4gkL5rZ92lnw7RFAOj1ej/M7HLbtp/ath2Q/Cbpq5mtzZLNnHACyQbAhru/BcBut/tlXv5Q4QQzGyySA+ZUXpb/IiydTmeh6vMYj8cVgCZI+gzg9iKvYxaSVkIIdyXtMufcA7Ap6eo/fl/vAaz/BtdzxF5kIXZfAAAAAElFTkSuQmCC');background-repeat:no-repeat;opacity: 1; border-radius: 50%;width: 60px;height: 60px;margin-left: 30px;"
+                            title="Enviar"></a>
+
+                        <!-- btn descargar -->
+                        <a href="#"
+                            style="text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #FFFFFF;opacity: 1;display: flex;align-items: center;text-decoration: none;background-color: #E71618;background-position: center;background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEUAAAD////////////////b29vt7e3o6Ojp6enp6enp6enq6urp6enp6enq6urq6urq6urr6+vr6+vq6urq6urq6urp6enq6urq6urq6urq6urq6urq6up0zJjhAAAAHHRSTlMAAQMFBgcOODlQUW2AgoOGrq+wtc7P1dbY2vz+4CYE1QAAAAFiS0dEAf8CLd4AAABcSURBVBjTpc3NGkAgEIXhQ8lPQxQK3f91WkzPo1j6VnPezQCc1igj+geqZqhVAmMliCCtSSBm1xCJxTV4ZBqzDYglBCv5PljWjXdALN+fX7iqF/gh371H52PW3t67hgUEwsj4hQAAAABJRU5ErkJggg==');background-repeat:no-repeat;opacity: 1; border-radius: 50%;width: 60px;height: 60px;margin-left: 20px;"
+                            title="Descargar"></a>
+                    </div>
+
+                    <p
+                        style="width:335px;text-align: right;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #707070;">
+                        Este ejercicio no representa una cotización final, para obtener una cotización favor de
+                        contactar a tu asesor comercial.
+                    </p>
+
+                </section>
+            </footer>
+        </div>
+
+
+        <!-- ************************************************ -->
+        <!-- MODAL SELECCIONAR PRODUCTOS, ARTICULOS O MODELOS -->
+        <!-- ************************************************ -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <h2 id="tituloOpcion"></h2>
+
+                <div id="inputsOptions">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ************************** -->
+        <!-- MODAL ELIMINAR UN PRODUCTO -->
+        <!-- ************************** -->
+        <div id="myModalDelete" class="modal black">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="mensaje">
+                    <h2>¿Estás seguro que deseas eliminar el articulo <span id="articuloNameMod"></span> ?</h2>
+                </div>
+                <div id="botones">
+                    <div class="center">
+
+                        <!-- borrar -->
+                        <input id="eliminarDefinitivo" type="button" data-id="resultado-cont1" value="Eliminar"
+                            style="width: 328px;height: 60px;background: #E71618 0% 0% no-repeat padding-box;border-radius: 6px;opacity: 1;color: white;border: 1px solid #E71618;cursor: pointer;font: normal normal normal 18px/21px Roboto;">
+
+                        <!-- cancelar -->
+                        <input class="close" type="button" value="Cancelar"
+                            style="border: 1px solid #343434;border-radius: 6px;opacity: 1;width: 328px;height: 60px;position: relative;top: unset;right: unset;font: normal normal normal 18px/21px Roboto;color: #343434;margin-top: 20px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ****************************** -->
+        <!-- Modal Descripcion de productos -->
+        <!-- ****************************** -->
+        <div id="myModalmMensaje" class="modal black">
+            <!-- Modal content -->
+            <div class="modal-content" style="width:492px; height: 410px;padding: 0 82px; overflow-y: auto;">
+                <span class="close" style="color:black;">&times;</span>
+
+                <h2 id="descripcionTitulo"
+                    style="padding:82px 0 0; text-align: center;font: normal normal 700 30px/36px Roboto;letter-spacing: 0px;color: #000000;opacity: 1;">
+                    GMC
+                </h2>
+                <h3 id="descripcionModelo"
+                    style="text-align: center;margin-top: 0px; font: normal normal 500 18px/21px Roboto;letter-spacing: 0px;color: #000000;opacity: 1;">
+                    Terrain SUV
+                </h3>
+                <p id="descripcionDescripcion"
+                    style="margin:0;padding: 0 0 20px;text-align: center; text-align: center;font: normal normal 500 14px/24px Roboto;letter-spacing: 0px;color: #000000;opacity: 1;">
+                    DENALI, Motor 2.0 L, Transmision Automatica, A/A automatico de 2 zonas, Sistema de
+                    infoentretenimiento con pantalla tactil de 8”, cristales y seguros electricos, Rines19” Aluminio,
+                    Frenos ABS en las 4 ruedas, 8 bolsas de aire, quemacocos panoramico, sistema onstar, quemacocos
+                    panoramico camara de vision trasera 360°
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="json.js"></script>
+
+    <!-- Data json productos___> var-->
+
+    <script>
+
+        /* PRIMEROS INPUTS */
+        const data = {
+            name: window["nombre-cliente"],
+            compraMes: window["vol-promedio-compra-mes"],
+            numeroPlantas: window["numeroPlantas"],
+
+        }
+
+        var arrDist = [];
+        var nivel = "";
+        var numeroNivel = 0;
+        const costo_silo = 48355;
+        
+        const meses = 12;
+        const kte_modulo_operacional = 800;
+        const kte_modulo_estrategico = 1500;
+        const kte_costo_asesoria_hora = 1605;
+        
+        /* software licencia */
+        const licencia = 700;
+        const tipoCambio = 21.81;
+
+        /* Botones principales */
+        const vol_promedio_compra_mes = document.getElementById('vol-promedio-compra-mes');
+        const numero_plantas = document.getElementById('numeroPlantas');
+
+        
+        /* inputs Software vertical RMX */
+        var valor_licencia = document.getElementById('valor-licencia');
+        var potencialOptim = document.getElementById('potencialOptim');
+        const softwareRmx = document.getElementById('softwareRmx');
+
+         /* inputs certificacion RMX */
+        var valor_certificacion = document.getElementById('valorCertificacion');
+        var potencial_certificacion = document.getElementById('potencialCertificacion');
+        const certifRmx = document.getElementById('certifRmx');
+
+        /* inputs construleads */
+        var capProyectos = document.getElementById('capProyectos');
+        var construleadsMonto = document.getElementById('construleadsMonto');
+        const btn_construleads = document.getElementById('btn-construleads');
+        
+
+        /* SECCIONES A MOSTRAR POR CADA SEGMENTO */
+        /* const diamante = ["sect-conecta"]*/
+        /* const oro = ["sect-conecta"]
+        const plata = ["sect-conecta"] */
+        const alldiv = ["sect-conecta", "sect-asesoria", "sect-supply", "sect-softwareRmx", "sect-certificacionRmx", "sect-club-compra", "sect-construleads", "general"];
+        const plata = oro = diamante = ["sect-asesoria", "sect-supply", "sect-softwareRmx", "sect-certificacionRmx", "sect-club-compra", "sect-construleads", "general"];
+
+        function formatNumber(num) {
+            let rounded = Math.round(num * 100) / 100;
+            return rounded.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        }
+
+
+        
+        const app = {
+            init() {
+                this.addEvents();
+            },
+            addEvents() {
+
+
+                // inputs
+                let modulo_operacional = document.getElementById('modulo-operacional');
+                let modulo_estrategico = document.getElementById('modulo-estrategico');
+
+
+                let hrs_asesoria_anual = document.getElementById('hrs-asesoria-anual');
+
+                // outputs
+
+                const holcim_conecta = document.getElementById('holcim-conecta');
+                const asesoria_tecnica = document.getElementById('asesoria-tecnica');
+                const holcim_supply = document.getElementById('holcim-supply');
+            
+                
+
+
+                const enviar_form = document.getElementById('enviar-form');
+                const aplicar_conecta = document.getElementById('btn-conecta');
+                const aplicar_asesoria = document.getElementById('btn-asesoria');
+                const aplicar_softwareV = document.getElementById('aplicar-softwarV');
+                const aplicar_certificacion = document.getElementById('aplicar-certificacion');
+
+
+
+
+                enviar_form.addEventListener('click', (event) => {
+
+                    event.preventDefault();
+                    divAllNone();
+
+
+                    if (valideteForm(data)) {
+
+                        /* calcula los puntos del nivel de usuario y los bloques que debe pintar*/
+                        if (document.getElementsByClassName("active")[0].id == "diamante"){
+                            arrDist = diamante;
+                            numeroNivel = 1;
+                        }
+                        else if (document.getElementsByClassName("active")[0].id == "oro"){
+                            arrDist = oro;
+                            numeroNivel = 0.75;
+                        }
+                        else if (document.getElementsByClassName("active")[0].id == "plata"){
+                            arrDist = plata;
+                            numeroNivel = 0.5;
+                        }
+
+
+
+                        /* APARECE LOS  */
+                        arrDist.forEach(function (id) {
+                            document.getElementById(id).style.display = "flex";
+                            if (id == "general" || id == "sect-club-compra")
+                                document.getElementById(id).style.display = "block";
+                        });
+
+                        /* ***************************/
+                        /* seccion val holcim Supply */
+                        let val_holcim_supply = ((numero_plantas.value * costo_silo) / ( vol_promedio_compra_mes.value * meses)) * numeroNivel;
+                        holcim_supply.innerText = '$ ' + formatNumber(val_holcim_supply);
+                        /* ***************************/
+
+
+                        /* ***************************** */
+                        /* calculo Software vertical RMX */
+                        valor_licencia.value = licencia *  tipoCambio * meses * numero_plantas.value;
+                        potencialOptim.value = (12 * (vol_promedio_compra_mes.value  / 0.3) * meses);
+                        softwarePresupuesto();
+                        /* ***************************** */
+
+
+                        /* ********************************** */
+                        /* calculo certificacion vertical RMX */
+                        valor_certificacion.value = 110000;
+                        potencial_certificacion.value = 10 * (vol_promedio_compra_mes.value / 0.3) * meses;
+                        certificacionPresupuesto();
+                        /* ********************************** */
+
+                        /* ************ */
+                        /* construleads */
+                            leads();
+                        /* ************ */
+                        
+                        /* ******* */
+                        /* SCROLL */
+                        setTimeout(function () {
+                            var elmnt = window["enviar-form"].getBoundingClientRect().bottom + 60;
+                            totalEstimado()
+                            window.scrollTo({
+                                top: elmnt,
+                                left: 0,
+                                behavior: 'smooth'
+                            });
+                        }, 100);
+                        /* ******* */
+                    }
+                });
+
+                /* *************** */
+                /* click asesoria */
+                aplicar_asesoria.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    if (validateAsesoria(hrs_asesoria_anual)) {
+                        let val_asesoria_tecnica = (hrs_asesoria_anual.value * numero_plantas.value * kte_costo_asesoria_hora) / (vol_promedio_compra_mes.value * meses);
+                        asesoria_tecnica.innerText = '$ ' + formatNumber(val_asesoria_tecnica);
+                        totalEstimado();
+                    }
+                });
+                /* *************** */
+
+
+                /* ************** */
+                /* click conecta */
+                aplicar_conecta.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    if (validateConecta(modulo_operacional, modulo_estrategico)) {
+                        let val_holcim_conecta = ((kte_modulo_operacional * modulo_operacional.value) + (kte_modulo_estrategico * modulo_estrategico.value))
+                            / (vol_promedio_compra_mes.value * meses);
+
+                        holcim_conecta.innerText = '$ ' + formatNumber(val_holcim_conecta)
+
+                        totalEstimado();
+
+                    }
+                });
+                /* *************** */
+
+                /* ********************** */
+                /* click software vetical */
+                aplicar_softwareV.addEventListener('click', (event) => {
+                    softwarePresupuesto();
+                    totalEstimado();
+                });
+                /* ********************** */
+
+
+                /* ******************* */
+                /* click Certificacion */
+                aplicar_certificacion.addEventListener('click', (event) => {
+                    certificacionPresupuesto();
+                    totalEstimado();
+                });
+                /* ******************* */
+
+                btn_construleads.addEventListener('click', (event) => {
+                    leads();
+                    totalEstimado();
+                });
+
+                /* ******************************* */
+                /* select nivel diamante oro plata */
+                let select_segmento = document.getElementsByClassName('select-segmento');
+
+                for (let i = 0; i < select_segmento.length; i++) {
+                    select_segmento[i].addEventListener("click", onReactionClick);
+                }
+
+                function onReactionClick() {
+                    let segment = this.getAttribute("id");
+                    window["errorAlert"].innerHTML = "";
+                    for (let i = 0; i < select_segmento.length; i++) {
+                        select_segmento[i].classList.remove("active");
+                    }
+                    this.classList.add("active");
+                }
+                /* ******************************* */
+
+
+
+
+            }
+        };
+        /* nuevo */
+        function reload() {
+            location.reload();
+        }
+        /* INICIA */
+        window.onload = function () {
+            app.init();
+        }
+
+        /* total estimado */
+        function totalEstimado() {
+
+            let totalEstimado = 0;
+
+            arrDist.forEach(function (id) {
+                if (id != "general") {
+                    let a = document.getElementById(id).querySelector(".resultadoAsumar").innerHTML
+                    totalEstimado += parseFloat(a.trim().replace(/,/g, "").substring(2, a.length));
+                }
+            });
+            window["valorEstimadoTotal"].innerHTML = "$ " + formatNumber(totalEstimado);
+
+            let beneficioAnualEstimado = (totalEstimado * vol_promedio_compra_mes.value) * 12;
+            /* console.log(beneficioAnualEstimado, totalEstimado , vol_promedio_compra_mes.val); */
+            window["beneficioAnualEstimado"].innerHTML = "$ " + formatNumber(beneficioAnualEstimado);
+
+        }
+
+        /* validaciones  */
+        /* VALIDA EN TIEMPO REAL */
+        validateInput();
+
+      
+        /* funcion para validar holcim conecta */
+        function validateConecta(modulo_operacional, modulo_estrategico) {
+
+            let success = false;
+
+            if (cantidades(modulo_operacional.value).error) {
+                modulo_operacional.style.borderBottom = "2px solid red";
+                modulo_operacional.focus();
+            }
+            else if (cantidades(modulo_estrategico.value).error) {
+                modulo_estrategico.style.borderBottom = "2px solid red";
+                modulo_estrategico.focus();
+            }
+            else {
+                success = true;
+            }
+
+            return (success)
+        }
+
+        /* valida asesoria anual */
+        function validateAsesoria(hrs_asesoria_anual) {
+            let success = false;
+
+            if (cantidades(hrs_asesoria_anual.value).error) {
+                hrs_asesoria_anual.style.borderBottom = "2px solid red";
+                hrs_asesoria_anual.focus();
+            }
+            else {
+                success = true;
+            }
+
+            return (success)
+        }
+
+
+        /* FUNCION PARA VALIDAR EL SUBMIT */
+        function valideteForm(data) {
+            let success = false;
+
+            if (nombres(data.name.value).error) {
+                data.name.style.borderBottom = "2px solid red";
+                window["errorAlert"].innerHTML = nombres(data.name.value).msj;
+                data.name.focus();
+            }
+            else if (cantidades(data.compraMes.value).error) {
+                data.compraMes.style.borderBottom = "2px solid red";
+                window["errorAlert"].innerHTML = cantidades(data.compraMes.value).msj;
+                data.compraMes.focus();
+            }
+            else if (cantidades(data.numeroPlantas.value).error) {
+                data.numeroPlantas.style.borderBottom = "2px solid red";
+                window["errorAlert"].innerHTML = cantidades(data.numeroPlantas.value).msj;
+                data.numeroPlantas.focus();
+            } else if (!document.getElementsByClassName("active")[0]) {
+                window["errorAlert"].innerHTML = "Selecciona un segmento";
+            }
+            else {
+                success = true;
+            }
+            return (success)
+
+        }
+
+        /* funcion para esconder todos los section resultados */
+        function divAllNone() {
+            alldiv.forEach(function (id) {
+                document.getElementById(id).style.display = "none";
+                if (id == "general")
+                    document.getElementById(id).style.display = "none";
+            });
+        }
+
+
+        /*FUNCION PARA validar en tiempo real */
+        function validateInput() {
+            let success = true;
+            var soloNum = document.getElementsByClassName("soloNumeros");
+            var sololet = document.getElementsByClassName("sololetras");
+            var inputs = document.querySelectorAll(".alert");
+            var resets = document.getElementsByClassName("reset");
+
+            /* CLICK AL BOTON LIMPIAR */
+            Array.prototype.forEach.call(resets, function (reset) {
+                reset.addEventListener("click", (e) => {
+                    Array.prototype.forEach.call(inputs, function (input) {
+                        input.style.borderBottom = 0;
+                    });
+
+                    /* ELIMINA LAS ALERTAS */
+                    window["errorAlert"].innerHTML = "";
+
+                    /* ESCONDE DE NUEVO TODOS LOS RESULTADOS */
+                    divAllNone();
+
+                    /* QUITA EL SELEC DEL SEGMENTO */
+                    document.getElementsByClassName("active")[0].classList.remove("active");
+                })
+            })
+
+
+            /* VALIDA LOS INPUTS QUE NO SEAN VACIOS */
+            Array.prototype.forEach.call(inputs, function (input) {
+                input.addEventListener('input', (event) => {
+                    if (input.value.length == 0) {
+                        input.style.borderBottom = "2px solid red";
+                    } else {
+                        input.style.borderBottom = "2px solid chartreuse";
+                    }
+                });
+            })
+
+            /* VALIDA INPUTS SOLO NUMEROS */
+            Array.prototype.forEach.call(soloNum, function (iput) {
+                iput.addEventListener("keypress", (e) => {
+                    if (!soloNumeros(e))
+                        e.preventDefault();
+                    window["errorAlert"].innerHTML = "";
+                })
+
+            });
+
+            /* VALIDA INPUTS SOLO LETRAS */
+            Array.prototype.forEach.call(sololet, function (iput, index) {
+                iput.addEventListener("keypress", (e) => {
+                    if (!soloLetras(e))
+                        e.preventDefault();
+                    window["errorAlert"].innerHTML = "";
+                })
+            });
+        }
+
+        //validar nombre
+        function nombres(dato) {
+            var datos = {};
+            var namecampo = "nombre"
+            datos.error = false;
+            datos.msj = '';
+            if (dato == '') {
+                datos.error = true;
+                datos.msj = 'El ' + namecampo + ' es obligatorio';
+            } else if (/(.)\1{3,50}/.test(dato)) {
+                datos.error = true;
+                datos.msj = 'El ' + namecampo + ' tiene 3 letras repetidas';
+            } else if (/^[0-9]*$/.test(dato)) {
+                datos.error = true;
+                datos.msj = 'El ' + namecampo + ' no puede ser número';
+            } else if (!(/^([a-zA-Z+\Á+\É+\Í+\Ó+\Ú+\Ñ+\á+\é+\í+\ó+\ú+\ñ 1-9]{2,20})/.test(dato))) {
+                datos.error = true;
+                datos.msj = 'El ' + namecampo + ' debe contener almenos 2 letras';
+            }
+            return datos;
+        }
+
+        /* FUNCION PARA VALIDAR LAS CANTIDADES */
+        function cantidades(dato) {
+            var datos = {};
+            var namecampo = "cantidad"
+            datos.error = false;
+            datos.msj = '';
+            if (dato == '') {
+                datos.error = true;
+                datos.msj = 'La ' + namecampo + ' es obligatoria';
+            }
+            return datos;
+        }
+
+        /* SOLO TECLAS */
+        function soloLetras(e) {
+            var key = e.keyCode || e.which;
+            var tecla = String.fromCharCode(key).toLowerCase();
+            var letras = "áéíóúabcdefghijklmnñopqrstuvwxyz "; // letras permitidas
+            var especiales = [46, 10, 13, 9, 8]; // carácteres especiales como espacio, borrar y enter
+
+            var tecla_especial = false;
+            for (var i in especiales) {
+                if (key == especiales[i]) {
+                    tecla_especial = true;
+                    break;
+                }
+            }
+
+            if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+                return false;
+            }
+            return true;
+        }
+
+        //VALIDACION SOLO NUMEROS 
+        function soloNumeros(e) {
+            let key = e.keyCode || e.which;
+            let tecla = String.fromCharCode(key).toLowerCase();
+            let letras = "1234567890"; // letras permitidas
+            let especiales = [46, 10, 13, 9, 8]; // carácteres especiales como espacio, borrar y enter
+            let tecla_especial = false;
+            for (let i in especiales) {
+                if (key == especiales[i]) {
+                    tecla_especial = true;
+                    break;
+                }
+            }
+
+            if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+                return false;
+            }
+            return true;
+        }
+
+        /* calcular Software vertical RMX */
+        function softwarePresupuesto() {
+            
+            let val_ton_soft = ( parseFloat(valor_licencia.value) + parseFloat(potencialOptim.value) ) / (vol_promedio_compra_mes.value * meses);
+            softwareRmx.innerText = '$ ' + formatNumber(val_ton_soft);
+        }
+
+        /* calcular Certificado vertical RMX */
+        function certificacionPresupuesto() {
+            
+            let val_ton_certif = (parseFloat(valor_certificacion.value) + parseFloat(potencial_certificacion.value)) / (vol_promedio_compra_mes.value * meses);
+            certifRmx.innerText = '$ ' + formatNumber(val_ton_certif);
+        }
+
+        /* construleads */
+        function leads() {
+            let constLead = parseFloat(capProyectos.value) / (vol_promedio_compra_mes.value * meses);
+            construleadsMonto.innerText = '$ ' + formatNumber(constLead);
+        }
+
+    </script>
+    <script src="selectAliados.js"></script>
+</body>
+
+</html>
